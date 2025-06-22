@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4ff;
+    }
+
+    .typing-container {
+      font-size: 28px;
+      color: #161195;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #161195;
+      width: fit-content;
+      animation: blinkCursor 0.7s step-end infinite;
+    }
+
+    @keyframes blinkCursor {
+      from { border-color: #161195; }
+      to { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="typing-container" id="type-text"></div>
+
+  <script>
+    const text = "Welcome to the Student Portal!";
+    const typingElement = document.getElementById("type-text");
+    let index = 0;
+
+    function typeCharacter() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeCharacter, 100); // Typing speed
+      }
+    }
+
+    window.onload = typeCharacter;
+  </script>
+
+</body>
+</html>

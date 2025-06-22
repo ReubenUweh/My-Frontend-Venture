@@ -1,0 +1,223 @@
+    * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .notice {
+        width: 100%;
+        height: 90px;
+        background-color: #d9534f;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
+
+      .notice p {
+        width: 60%;
+        font-size: 17px;
+        color: white;
+      }
+
+      hr {
+        border: none;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(64, 155, 64);
+      }
+
+      header #socials {
+        background-color: #292929;
+        width: 100%;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      header #socials p {
+        width: 40%;
+        font-size: 13px;
+      }
+
+      header #socials a {
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+      }
+
+      a {
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header #socials span {
+        width: 20%;
+        position: relative;
+        left: 80px;
+      }
+
+      header #socials span img {
+        width: 30px;
+        margin: 0 0 0 5px;
+      }
+
+      header #socials span img[src="mail.svg"] {
+        background-color: black;
+        border-radius: 7px;
+        width: 32px;
+        position: relative;
+        top: 2px;
+      }
+
+      nav {
+        background-color: beige;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav .head-img {
+        width: 20%;
+      }
+
+      nav .head-img img {
+        position: relative;
+        top: 20px;
+        left: 80px;
+      }
+
+      .toggle button {
+        background-color: transparent;
+        border: none;
+        height: 20px;
+        position: relative;
+        left: 490px;
+        top: 28px;
+        display: none;
+      }
+
+      .fa-bars {
+        font-size: 20px;
+        color: rgb(23, 7, 7);
+      }
+
+      nav .toggle {
+        width: 75%;
+      }
+
+      .toggle {
+        display: flex;
+      }
+
+      .toggle .menu {
+        display: flex;
+      }
+
+      .toggle .menu li {
+        border-top: 5px solid #8bc42a;
+        padding-top: 25px;
+        list-style: none;
+        margin-left: 25px;
+      }
+
+      .toggle .menu li a {
+        text-decoration: none;
+        color: #111;
+      }
+
+      .toggle .menu li .color {
+        color: #8bc42a;
+      }
+
+      .toggle img {
+        margin: 20px 0 0 50px;
+      }
+
+      .toggle .fa-search {
+        font-size: 18px;
+        margin: 30px 0 0 60px;
+      }
+
+      .toggle div {
+        background-color: #e3e0da;
+        width: 300px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 210px;
+        left: 950px;
+        visibility: hidden;
+      }
+
+      .toggle div input {
+        width: 200px;
+        padding: 20px;
+        margin: 0 0 0 80px;
+        border: 0;
+      }
+
+      .toggle div i {
+        background-color: black;
+        width: 20px;
+        padding: 19px;
+        position: relative;
+        color: #fff;
+        left: -59px;
+        top: -14px;
+      }
+
+      .toggle i:hover #search {
+        visibility: visible;
+      }
+
+      .toggle .about .sub-menu {
+        position: absolute;
+        left: 370px;
+        width: 170px;
+        height: 120px;
+        display: none;
+      }
+      .sub-menu li {
+        margin-top: 1px;
+        padding: -20px 0 0 10px;
+        color: #171515b5;
+        background-color: #f2f0f0;
+        border-bottom: 1px solid #ccc;
+      }
+      .sub-menu li a:hover {
+        color: #8bc42a;
+      }
+      .about:hover .sub-menu {
+        display: block;
+        transition: 2s;
+        transition-delay: 4s;
+      }
+      .submenu2 {
+        position: absolute;
+        left: 480px;
+        width: 170px;
+        height: 120px;
+        display: none;
+      }
+      .submenu2 li {
+        margin-top: 1px;
+        padding: -20px 0 0 10px;
+        color: #171515b5;
+        background-color: #f2f0f0;
+        border-bottom: 1px solid #ccc;
+      }
+      .about:hover .submenu2 {
+        display: block;
+        transition: 2s;
+        transition-delay: 4s;
+      }
+       .submenu2 li a:hover {
+        color: #8bc42a;
+      }

@@ -1,0 +1,69 @@
+@media (max-width:1050px){
+    /* header */
+    header{
+        width: 100%;
+        overflow: hidden;
+    }
+    .notice p {
+    text-align: center;
+    word-break: break-all;
+    overflow: hidden;
+}
+nav{
+    overflow: hidden;
+}
+header #socials{
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.toggle button{
+    display: inline;
+}
+#socials p{
+    margin: 5px 0 10px 100px;
+}
+#socials span{
+    margin: -10px 0 0 -100px;
+}
+.toggle .menu{
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    top: 269px;
+    left: 1px;
+    display: none;
+    border: none;
+    background-color: rgb(221, 218, 224);
+}
+.toggle .menu li{
+    width: 100%;
+    padding: 15px 0 0 0;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.069);
+}
+img[src="report-gov.jpg"]{
+    position: absolute;
+    top: 490px;
+    left: -23px;
+    mix-blend-mode: color-burn;
+    width: 150px;
+    height: 45px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.069);
+    display: none;
+}
+.fa-search{
+    display: none;
+}
+.toggle:hover .menu{
+    display: block;
+}
+.toggle:hover .menu{
+    display: block;
+}
+nav:hover img[src="report-gov.jpg"]{
+    display: block;
+}
+}

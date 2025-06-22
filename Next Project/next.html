@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="file"],
+    input[type="date"],
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+
+    #submissionList {
+      margin-top: 20px;
+    }
+
+    .submitted {
+      background: #e0ffe0;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 4px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Assignment Submission</h2>
+
+    <label for="assignment">Upload Assignment:</label>
+    <input type="file" id="assignment">
+
+    <label for="dueDate">Due Date:</label>
+    <input type="date" id="dueDate">
+
+    <button onclick="submitAssignment()">Submit</button>
+
+    <div id="submissionList"></div>
+  </div>
+
+  <script>
+    function submitAssignment() {
+      const fileInput = document.getElementById("assignment");
+      const dueDate = document.getElementById("dueDate").value;
+      const submissionList = document.getElementById("submissionList");
+
+      if (!fileInput.files[0] || !dueDate) {
+        alert("Please select a file and a due date.");
+        return;
+      }
+
+      const fileName = fileInput.files[0].name;
+
+      // Save to localStorage (simulate saving)
+      let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+      submissions.push({ fileName, dueDate });
+      localStorage.setItem("submissions", JSON.stringify(submissions));
+
+      // Display updated list
+      displaySubmissions();
+    }
+
+    function displaySubmissions() {
+      const submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+      const list = document.getElementById("submissionList");
+      list.innerHTML = "<h3>Submitted Assignments:</h3>";
+
+      submissions.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.className = "submitted";
+        div.innerHTML = `<strong>${item.fileName}</strong><br>Due: ${item.dueDate}`;
+        list.appendChild(div);
+      });
+    }
+
+    // Load on page refresh
+    window.onload = displaySubmissions;
+  </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+:root{
+    --primary-color: #A0CE4E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    background:none;
+    border: none;
+}
+.flex{
+    display: flex;
+}
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-section{
+    height: 40px;
+}
+.top-section .socials i{
+    margin-left: 5px;
+}
+                /* nav section | section 2 */
+nav{
+    height: 90px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul .menu1{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav .logo{
+    width: 150px;
+}
+nav ul .menu1:hover{
+    border-top: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+nav ul .menu-hov:hover .sub-menu,
+nav ul .menu-hov:hover .search-menu{           /*for both sub menu and search menu*/
+    display: block;
+}
+.sub-menu{
+    width: 170px;
+    border-top: 3px solid var(--primary-color);
+    display: none;
+}
+.search-menu{
+    width: 270px;
+    height: 100px;
+    margin: 25px 0 0 -250px;
+    display: none;
+}
+.search-menu input{
+    height: 40px;
+    outline: none;
+}
+.search-menu i{
+    padding: 12px;
+}
+                /* header section | section 3 */
+.header{
+    background: #ffffff url(../images/cac-office-hq.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 450px;
+}
+.header .header-text{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+                /* section 4 */
+.section4-5{
+    width: 100%;
+    padding: 0 20px;
+}
+.section-4{
+margin-top: 30px;
+justify-content: space-between;
+width: 100%;
+}
+.section-4 div{
+    width: 45%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#dbe4c6, #C3D892, #AFCB74);
+    border-radius: 5px;
+    box-shadow: 0 2px 0 rgb(85, 82, 82),  4px 4px 5px rgb(171, 165, 165);
+    font-weight: bold;
+    color: #54770F;
+}
+.section-4 div i{
+    color: white;
+    margin-right: 4px;
+}
+                    /* section 5 \ flip card */
+.section-5{
+    justify-content: space-between;  
+    width: 100%; 
+}
+.card{
+    width: 360px;
+    height: 350px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.card .front,
+.card .back {
+width: 360px;
+height: 350px;
+background-color: #F2EFEF;
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+}
+.card .front{
+    z-index: 1;
+}
+.card .front i{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 30px;
+}
+.card:nth-child(4) .front i{                    /* for the dollar sign*/
+    padding: 30px 40px;
+}
+.card .front .big{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+.card .front .small{
+    margin-top: 15px;
+}
+.card .back{
+    background-color: var(--primary-color);
+    color: white;
+}
+.card .back .big{
+    font-size: 25px;
+    text-align: center;
+}
+.card .back button{
+    margin-top: 20px;
+    background-color:   inherit;
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+.card:hover .back,
+.card:hover .front{
+    transition: 0.5s;
+    z-index: 2;
+    transform: rotateX(180deg);
+}
+.back:hover p,                                          /*for flippin the text inside the back card */
+.back:hover button{
+    transform:rotateX(-180deg);
+}
+                /* section 6 | registrtion title */
+.section-6{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+.section-6 h1{
+    padding: 0 10px;
+    font-weight: 1;
+    font-size: 50px;
+}
+.section-6 hr{
+    width: 30%;
+}
+                    /*section-7 registration steps */
+.section-7{
+    justify-content: center;
+    padding-top: 20px;
+}
+.section-7 .card{
+    width: 360px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    
+}
+.section-7 .card:hover i{
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--primary-color);
+    border: 10px solid #ffffff;
+}
+.section-7 .card i{
+    font-size: 40px;
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 100%;
+    border: 9px solid #ffffff;
+}
+.section-7 .card .title{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.section-7 .card .details{
+    text-align: center;
+    padding-top: 20px;
+}
+            /* faq section */
+.faq{
+    justify-content: center;
+    margin: 50px 0;
+}
+.faq div{
+    width: 90%;
+    min-height: 60px;
+    border: 1px solid #D9B917;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF8E3;
+    font-size: 20px;
+}
+.faq div i{
+    margin-right: 10px;
+    color: #D9B917;
+}
+                /* footer section */
+.footer{
+    height: 400px;
+    background-color: #D8D8D8;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 10px solid var(--primary-color);
+}
+.footer .right{
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+.footer .right img{
+    width: 150px;
+    padding: 20px 0 20px 0;
+}
+.footer .left{
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(#018101, #5DC75D 75px, #90EE90 70px 100px);
+    margin-right: 200px;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    box-shadow: 10px 10px 0 #C5C7C9;
+}
+.footer-bottom{
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    background-color: #235E27;
+    color: white;
+    font-size: 13px;
+}
+.footer-bottom i{
+    padding: 0 5px;
+    color: gray;
+}

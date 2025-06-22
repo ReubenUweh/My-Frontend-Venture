@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Segoe UI';
+}
+
+main{
+    background-color: #fff;
+    margin: 30px 0 0 20px;
+    overflow: hidden;
+}
+
+main .phone{
+    margin-right: 20px;
+    width: 350px;
+    height: 670px;
+    border: 10px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+main .two{
+    position: absolute;
+}
+
+section{
+    padding: 5px;
+ }
+
+ section span{
+     font-weight: 600;
+     margin: 0 190px 0 10px;
+ }
+
+ .profile{
+    margin: 3px 0 0 10px;
+ }
+
+ .profile p{
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+ }
+
+ .profile span{
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+    top: -10px;
+ }
+
+ .profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 170px;
+    position: relative;
+    top: -7px;
+ }
+
+ hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+    width: 330px;
+ }
+
+ #socials{
+    margin: 10px 0 0 15px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 100%;
+    position: relative;
+ }
+
+ #socials .twitter{
+    height: 80px;
+    width: 170px;
+    background-image: linear-gradient(135deg, #3e16ed, #291f8a,#3c3892);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+ }
+
+ #socials .twitter .name{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-weight: 500;
+    color: #fff;
+ }
+
+ #socials .twitter .review{
+    position: absolute;
+    top: 30px;
+    font-size: 10px;
+    left: 70px;
+    font-weight: 500;
+    color: #fff;
+ }
+
+ #socials .twitter span{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    font-size: 9px;
+    color: #fff;
+ }
+
+ #socials .twitter .rating{
+    position: absolute;
+    top: 50px;
+    left: 132px;
+    font-size: 11px;
+    color: #fff;
+ }
+
+ #socials .twitter img{
+    background-color: white;
+    padding: 15px;
+    border-radius: 100%;
+    width: 55px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+ }
+
+ #socials .webcam{
+    height: 80px;
+    width: 170px;
+    background-image: linear-gradient(135deg, #da0f0f, #8a1f1f,#923838);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: absolute;
+    top: -1px;
+    left: 180px;
+ }
+
+ #socials .webcam .name{
+   position: absolute;
+   top: 10px;
+   left: 68px;
+   font-weight: 500;
+   color: #fff;
+}
+
+#socials .webcam .review{
+   position: absolute;
+   top: 30px;
+   font-size: 10px;
+   left: 68px;
+   font-weight: 500;
+   color: #fff;
+}
+
+#socials .webcam span{
+   position: absolute;
+   top: 50px;
+   left: 68px;
+   font-size: 9px;
+   color: #fff;
+}
+
+#socials .webcam .rating{
+   position: absolute;
+   top: 50px;
+   left: 130px;
+   font-size: 11px;
+   color: #fff;
+}
+
+#socials .webcam img{
+   background-color: white;
+   padding: 12px;
+   border-radius: 100%;
+   width: 50px;
+   position: relative;
+   top: 10px;
+   left: 10px;
+}
+
+.social-close{
+   border: none;
+   background-color: rgb(216, 207, 207);
+   height: 4px;
+   margin-top: 5px;
+}
+
+img[src="swim.jpg"]{
+   width: 30px;
+   border-radius: 5px;
+}
+
+h3{
+   margin: 3px 0 5px 10px;
+}
+
+#places div{
+   position: relative;
+   left: 50px;
+   top: -45px;
+}
+
+#places .bio{
+   font-size: 15px;
+   font-weight: 700;
+}
+
+#places .place{
+   font-size: 12px;
+   font-weight: 300;
+} 
+
+.img-slide{
+   position: relative;
+   margin: 17px 0 0 -40px;
+   word-spacing: 20px;
+   top: 15px;
+   overflow-x: scroll;
+   scrollbar-width: none;
+}
+.img-slide img{
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+} 
+
+img[src="yoga.jpg"]{
+   margin-left: 5px;
+}
+
+img[src="run.jpg"]{
+   position: relative;
+   left: 15px;
+}
+
+.place-line{
+   border: none;
+   background-color: black;
+   height: 1px;
+   position: relative;
+   bottom: 40px;
+}
+
+#explore{
+   margin-top: -13px;
+}
+
+#explore span img{
+   margin: -20px 0 0 0;
+}
+
+#explore div{
+   position: relative;
+   left: 50px;
+   top: -45px;
+}
+
+p[title="name"]{
+   font-size: 15px;
+   font-weight: 700;
+}
+
+#explore .place2{
+   font-size: 12px;
+   font-weight: 300;
+}
+
+footer{
+   position: relative;
+   bottom: 40px;
+}
+
+footer i{
+   margin-left: 38px;
+}
+
+footer .fa-heart{
+   color: blue;
+}
+
+footer div span{
+   font-size: 11px;
+   font-weight: 500;
+   margin: 0 0 0 28px;
+   position: relative;
+   bottom: 5px;
+}
+
+span[title="likes"]{
+   color: blue;
+}
+
+#exit{
+   width: 90px;
+   height: 3px;
+   border-radius: 5px;
+   background-color: black;
+   position: relative;
+   top: 3px;
+   left: 120px;
+}
+
+#profile{
+   margin: 3px 0 0 10px;
+}
+
+#profile p{
+   position: relative;
+   top: 10px;
+   font-size: 15px;
+}
+
+#profile span{
+   font-size: 30px;
+   font-weight: 800;
+   position: relative;
+   top: -10px;
+}
+
+#profile img{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   margin-left: 120px;
+   position: relative;
+   top: -7px;
+}
+
+#profiles{
+   margin-top: 5px;
+}
+
+#profiles{
+   overflow-x: scroll;
+   scrollbar-width: none;
+}
+
+#profiles p{
+   margin: 0 0 0 10px;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+#profiles i{
+   color: white;
+   background-color: blue;
+   padding: 21px;
+   border-radius: 100%;
+   margin: 3px 10px 0 10px;
+   position: relative;
+   bottom: 7px;
+}
+
+#profiles img{
+   width: 57px;
+   height: 55px;
+   border-radius: 100%;
+   margin: 2px 10px;
+   position: relative;
+   top: 15px;
+}
+
+#profiles #run{
+   position: relative;
+   left: 310px;
+   top: -68px;
+}
+
+
+#profiles span span{
+   color: white;
+   background-color: blue;
+   padding: 19px;
+   border-radius: 100%;
+   position: relative;
+   left: 10px;
+   bottom: 5px;
+}
+
+#social-close{
+   border: none;
+   background-color: rgb(216, 207, 207);
+   height: 4px;
+   margin-top: 5px;
+   position: relative;
+   bottom: 60px;
+}
+
+#messages{
+   position: relative;
+   top: -55px;
+}
+
+#messages p{
+   margin: 0 0 0 10px;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+#messages .message-box{
+   margin: 10px 0 0 10px;
+}
+
+#messages .message-box1{
+   margin: -30px 0 0 10px;
+}
+
+#messages img{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   position: relative;
+}
+
+#messages .names{
+   font-size: 15px;
+   font-weight: 800;
+   position: relative;
+   top: -50px;
+   left: 50px;
+}
+
+#messages span{
+   font-size: 12px;
+   position: relative;
+   bottom: 75px;
+   left: 230px;
+}
+
+#messages .message{
+   font-size: 12px;
+   position: relative;
+   bottom: 68px;
+   left: 50px;
+}
+
+.message-line{
+   border: none;
+   background-color: black;
+   height: 1px;
+   width: 330px;
+   position: relative;
+   top: -45px;
+   bottom: 0;
+}
+
+.submit-line{
+   border: none;
+   background-color: black;
+   height: 1px;
+   width: 330px;
+   position: relative;
+   top: -15px;
+   bottom: 0;
+}
+
+#submit{
+   position: relative;
+   top: -30px;
+   left: 90px;
+   font-size: 15px;
+   background-color: blue;
+   color: white;
+   padding: 10px;
+   width: 150px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+#phone2{
+   position: relative;
+   bottom: 70px;
+}
+
+#phone2 i{
+   margin-left: 38px;
+}
+
+#phone2 .fa-heart{
+   color: black;
+}
+
+#phone2 .fa-paper-plane{
+   color: blue;
+}
+
+#phone2 div span{
+   font-size: 11px;
+   font-weight: 500;
+   margin: 0 0 0 28px;
+   position: relative;
+   bottom: 5px;
+}
+
+span[title="mails"]{
+   color: blue;
+}
+
+#exit{
+   width: 90px;
+   height: 3px;
+   border-radius: 5px;
+   background-color: black;
+   position: relative;
+   top: 3px;
+   left: 120px;
+}

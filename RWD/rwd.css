@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* leftbar */
+.left-bar {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+.header .green {
+    width: 35%;
+    height: 100%;
+    background-color: green;
+}
+
+.header .blues {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blues .blue1 {
+    width: 100%;
+    height: 60%;
+    background-color: blue;
+}
+
+.blues .blue2 {
+    width: 100%;
+    height: 30%;
+    background-color: blue;
+}
+
+.oranges {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orange {
+    width: 48%;
+    height: 100%;
+    background-color: orange;
+}
+
+.lightblues {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightblue {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(166, 166, 220);
+}
+
+.darkblues {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.darkblue {
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+
+/* Mobile */
+@media only screen and (max-width:768px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .left-bar {
+        position: relative;
+        top: 70px;
+        left: 50px;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+    }
+
+    .header .green {
+        width: 100%;
+        height: 150%;
+        background-color: green;
+    }
+
+    .blues {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blues .blue1 {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 80%;
+        background-color: blue;
+    }
+
+    .blues .blue2 {
+        display: none;
+    }
+
+    .oranges {
+        width: 100%;
+        height: 30%;
+        position: relative;
+        top: 70px;
+    }
+
+    .orange {
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .lightblues {
+        position: relative;
+        top: 125px;
+        width: 100%;
+        height: 40%;
+    }
+
+    .lightblue {
+        width: 63%;
+        height: 70%;
+    }
+
+    .three {
+        display: none;
+    }
+
+    .darkblues {
+        display: none;
+    }
+}
+
+/* SmartWatch */
+@media only screen and (max-width:200px){
+    .left-bar{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        left: -10px;
+    }
+    .header .green{
+        display: none;
+    }
+    .blues .blue1{
+        height: 40%;
+    }
+    .orange{
+        position: relative;
+        margin-top: -50px;
+        height: 120%;
+    }
+    .blues .blue2 {
+        display: none;
+    }
+    .lightblues{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width:1024px) {
+
+    /* leftbar */
+    .left-bar {
+        margin-left: 15px;
+        width: 60%;
+    }
+
+    .header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header .green {
+        width: 100%;
+    }
+
+    .header .blues {
+        width: 100%;
+    }
+
+    .oranges {
+        width: 100%;
+    }
+
+    .orange {
+        width: 100%;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .lightblues {
+        width: 158%;
+    }
+
+    .darkblues {
+        width: 158%;
+    }
+}
+
+/* rightbar */
+.right-bar {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bluelight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 46%;
+}
+
+.box-blue {
+    width: 100%;
+    height: 40%;
+    background-color: blue;
+}
+
+.boxlight {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(135, 135, 226);
+}
+
+.boxblue {
+    width: 100%;
+    height: 52%;
+    background-color: blue;
+}
+
+/* Mobile */
+@media only screen and (max-width:768px) {
+    .right-bar {
+        width: 0;
+        display: none;
+    }
+
+    .bluelight {
+        display: none;
+    }
+
+    .boxblue {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width:1024px) {
+
+    /* rightbar */
+    .right-bar {
+        width: 30%;
+        height: 39%;
+        margin-top: 85px;
+        margin-left: -10px;
+    }
+}
+
+/* ?desktop */
+/* @media only screen and (min-width:1100px){
+
+} */

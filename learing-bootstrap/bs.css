@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.box{
+    width: 320px;
+    height: 570px;
+}
+
+.box i{
+    font-size: 20px;
+}
+
+.categories{
+    font-size: 15px;
+}
+
+.categories i{
+    position: relative;
+    left: 75px;
+    top: 3px;
+}
+
+.icon i{
+    font-size: 15px
+}
+
+.boxes div{
+    width: 150px;
+    height: 125px;
+}
+
+.boxes1{
+    margin-top: -15px;
+}
+
+.boxe{
+    width: 151px;
+    height: 125px;
+    position: relative;
+    top: -20px;
+}
+
+.text-black{
+    position: relative;
+    top: 22px;
+    left: 40px;
+    font-size: 13px;
+}
+
+.text{
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+.border-top{
+    margin-top: -24px;
+}
+
+.border-top i{
+    position: relative;
+    top: 3px;
+}
+
+.border-top div{
+    font-size: 20px;
+}
+
+.fa-lock{
+    margin-left: 110px;
+    margin-top: 10px;
+}

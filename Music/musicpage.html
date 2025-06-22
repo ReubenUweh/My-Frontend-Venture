@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Play</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+     body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        background-image: linear-gradient(135deg, #0d0d0d, #1a0033, #000033);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+    main{
+        width: 350px;
+        height: 620px;
+        background-color: #fff;
+        margin: 0 auto;
+        z-index: 5;
+        position: relative;
+        top: 3px;
+        border-radius: 20px;
+        border: 5px solid whitesmoke;
+    }
+
+    section{
+        padding: 10px;
+        }
+
+        section span{
+        font-weight: 600;
+        margin-right: 215px;
+        }
+
+        #top-icon{
+            position: relative;
+            top: 7px;
+
+        }
+
+        #top-icon .fa-music{
+            background-color: #0b0b72;
+            padding: 15px;
+            border-radius: 100%;
+            color: white;
+            margin: 0 3px 0 15px;
+        }
+
+        #top-icon div{
+            display: inline;
+            font-size: 17px;
+            font-weight: 600;
+            margin-right: 110px;
+        }
+
+        #top-icon .fa-search{
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 100%;
+        }
+
+        .post{
+            margin:  5px 0 0 10px;
+        }
+
+        .post span{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 0 10px;
+        }
+
+        .post div{
+            position: relative;
+            left: 260px;
+            font-weight: 500;
+            color: #0b0b72;
+        }
+
+        .post a{
+            position: relative;
+            bottom: 15px;
+            text-decoration: none;
+        }
+
+        #post #art{
+            margin-right: 180px;
+        }
+
+        #post a{
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #trial-info{
+            height: 130px;
+            width: 300px;
+            background-image: linear-gradient(#0b0b72, #111111);
+            margin: 0 0 0 20px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        #trial-info p{
+            color: rgb(189, 189, 51);
+            font-size: 13px;
+            margin: 10px;
+            word-spacing: 5px;
+            font-weight: 500;
+        }
+
+        #trial-info .trial-span{
+            font-size: 15px;
+            color: white;
+        }
+
+        #trial-info .trial-span span{
+            font-size: 15px;
+            color: rgb(189, 189, 61);
+        }
+
+        .play{
+            font-size: 11px;
+            background-color: rgb(204, 255, 0);
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            border-radius: 100px 100px;
+            margin: 3px 0 0 10px;
+        }
+
+        .play i{
+            padding: 5px;
+            background-color: white;
+            border-radius: 100px;
+            margin-top: 3px;
+        }
+
+        .play span{
+            font-weight: 700;
+        }
+    
+        #trial-info #wave{
+            position: relative;
+            left: 130px;
+            bottom: 110px;
+        }
+
+        #trial-info #ad-player{
+            position: absolute;
+            top: 133px;
+            right: 20px;
+        }
+
+        .musicians{
+            margin: -2px 0 0 20px;
+        }
+
+        .img{
+            border-radius: 10px;
+            width: 80px;
+            margin-right: 10px;
+        }
+
+        .drake{
+            width: 93px;
+        }
+
+        .adele{
+            height: 80px;
+            width: 90px;
+            margin: 0;
+        }
+
+        #musician-1{
+            position: relative;
+            left: 20px;
+            bottom: 5px;
+        }
+
+        #musician-1 .about{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        #musician-1 .name{
+            font-size: 10px;
+            font-weight: 600;
+            color: #646262;
+        }
+
+        #musician-2{
+            position: relative;
+            left: 115px;
+            bottom: 35px;
+        }
+
+        #musician-2 .about{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        #musician-2 .name{
+            font-size: 10px;
+            font-weight: 600;
+            color: #646262;
+        }
+
+        #musician-3{
+            position: relative;
+            left: 222px;
+            bottom: 65px;
+        }
+
+        #musician-3 .about{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        #musician-3 .name{
+            font-size: 10px;
+            font-weight: 600;
+            color: #646262;
+        }
+
+        .musicians i{
+            background-color: white;
+            padding: 5px;
+            border-radius: 100%;
+            font-size: 10px;
+        }
+
+        .musicians .fa-play{
+            position: absolute;
+            right: 267px;
+            margin-top: 35px;
+        }
+
+        #play2{
+            position: relative;
+            bottom: 83px;
+            left: 100px;
+        }
+
+        #play3{
+            position: relative;
+            bottom: 83px;
+            left: 200px;
+        }
+
+        #post{
+            margin:  -55px 0 0 10px;
+        }
+
+        #post span{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 0 10px;
+        }
+
+        #post div{
+            position: absolute;
+            left: 260px;
+            bottom: 145px;
+            font-weight: 500;
+            color: #0b0b72;
+        }
+
+        #artist{
+            background-image: linear-gradient(#0b0b72, #111111);
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            margin: 5px 0 0 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #artist2{
+            background-image: linear-gradient(#521212, #bfb6b6);
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            margin: 5px 0 0 30px;
+            overflow: hidden;
+            position: relative;
+            bottom: 85px;
+            left: 95px;
+        }
+
+        #artist2 img{
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 7px;
+            right: 7px;
+        }
+
+        #artist3{
+            background-image: linear-gradient(#eb20c2, #111111);
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            position: relative;
+            bottom: 165px;
+            left: 230px;
+            overflow: hidden;
+        }
+
+        #artist3 img{
+            margin: 0 10px 0 0;
+            position: relative;
+            top: 3px;
+            right: 15px;
+
+        }
+
+        #artist-name{
+            position: relative;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: -160px;
+        }
+
+        #artist-name span{
+            margin-left: 35px;
+        }
+
+        #page-icon{
+            margin: 2px 0 0 30px;
+            word-spacing: 40px;
+        }
+
+        #icon-name{
+            margin: -3px 0 0 30px;
+            word-spacing: 16px;
+            font-size: 11px;  
+        }
+
+        footer{
+            height: 5px;
+            width: 130px;
+            background-color: rgb(4, 1, 15);
+            margin: 0 auto;
+            position: relative;
+            top: 3px;
+            border-radius: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+       <!-- Time and Notification -->
+       <section>
+        <span>9:41</span>
+        <i class="fa fa-signal" aria-hidden="true"></i>
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+        <i class="fa fa-battery-full" aria-hidden="true"></i>
+    </section>
+    <a id="top-icon">
+        <i class="fa fa-music" aria-hidden="true"></i>
+    <div>
+        Music App+
+    </div>
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <div class="post">
+        <span>Trending Albums</span>
+        <div class="list"><a href="">See All</a></div>
+    </div>
+    <div id="trial-info">
+        <p>TRY FREE TRIAL</p>
+        <p class="trial-span"><span>30-Day Free</span> Trial<br>Only For You!</p>
+        <div class="play">
+            <i class="fa fa-play" aria-hidden="true"></i>
+            <span>Play Now</span>
+        </div>
+            <img src="wave.png" alt="" width="200px" id="wave">
+            <img src="ghp.png" alt="" width="200px" id="ad-player">
+    </div>
+    <div class="post">
+        <span>New Releases</span>
+        <div class="list"><a href="">See All</a></div>
+    </div>
+    <div class="musicians">
+        <img src="dave.jpeg" alt="" class="img dave">
+        <a href="musicplayer.html"><i class="fa fa-play" aria-hidden="true"></i></a>
+        <img src="drake.jpeg" alt="" class="img drake">
+        <img src="adele.jpeg" alt="" class="img adele">
+        <div id="play2">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+        <div id="play3">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div id="musician-1">
+        <p class="about">UK Rap Mus..</p>
+        <p class="name">Santan Dave</p>
+    </div>
+    <div id="musician-2">
+        <p class="about">Hip Hop Music</p>
+        <p class="name">Drake</p>
+    </div>
+    <div id="musician-3">
+        <p class="about">Blues Pulse</p>
+        <p class="name">Adele</p>
+    </div>
+    <div id="post">
+        <span id="art">Artists</span>
+        <span class="list"><a href="">See All</a></span>
+    </div>
+    <div id="artist">
+        <img src="rihanna.png" alt="" width="120px">
+    </div>
+    <div id="artist2">
+        <img src="billie.png" alt="" width="110px">
+    </div>
+    <div id="artist3">
+        <img src="TS.png" alt="" width="130px">
+    </div>
+    <div id="artist-name">
+        <span>Rihanna</span>
+        <span>Billie Eillish</span>
+        <span>Taylor Swift</span>
+    </div>
+    <div id="page-icon">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <i class="fa fa-compass" aria-hidden="true"></i>
+        <i class="fa fa-download"></i>
+        <i class="fa fa-music" aria-hidden="true"></i>
+        <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+    <div id="icon-name">
+        <span>Home</span>
+        <span>Discover</span>
+        <span>Download</span>
+        <span>Playlist</span>
+        <span>Profile</span>
+    </div>
+    <footer>
+        &nbsp;
+     </footer>
+    </main>
+</body>
+</html>

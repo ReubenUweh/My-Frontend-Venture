@@ -1,0 +1,52 @@
+/* Animation on my Nav bar */
+/* Amimations */
+
+@keyframes SlideInLeft {
+
+    /*H1 nav bar animation*/
+    from {
+        margin-left: -500px;
+    }
+
+    to {
+        justify-content: space-around;
+    }
+}
+
+@keyframes SlideInRight {
+
+    /*ul animation*/
+    from {
+        margin-left: 1500px;
+
+    }
+
+    to {
+        justify-content: space-around;
+    }
+}
+
+@keyframes Media {
+
+    /*media slide*/
+    from {
+        margin-left: -500px;
+    }
+
+    to {
+        justify-content: space-between;
+    }
+}
+
+/* ul */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

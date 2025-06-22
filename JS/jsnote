@@ -1,0 +1,118 @@
+Key words for creating variables:
+a. var
+b. let
+c. const
+
+variable scope{
+    Is a way of saying of how a var can go or how acessible it is
+}
+
+fuction scope{
+    they are in certain area like let and const
+}
+
+DT: 
+- Algorithm : Algorithms are step by step set of instructions used to solve problems or perform tasks
+- Pseudo  : Pseudo Codes are ways to descibe an algorithm in a more simplier format rather than code based logic which can be understood.
+
+Maths Operators in JavaScript
++ plus, concantenation
+- minus
+/ Divide
+* multiply
+% modulus
+** Exponentials
+++ Increament
+-- Decreament
+
+CRUD
+C - Create
+R - Read
+U - Update
+D - Delete
+
+List/Array are zero based indexed
+to delete a file in JS array use Null
+
+types of loop:
+for loop ------ we talked about for first
+do while loop
+while loop
+for in loop 
+for each loop
+
+//Assignment
+I should read about:
+x++ preincreament
+++x postincreament
+Logical Operators
+in not less than 1 page write all the things have been thought in C++
+do factorial of 5
+//
+
+Truthe Table-- Is a mathematical table that determines the truth of a logical statement.
+[ T ]  [ F ] [ T & F ] [ T || F ] [ !T ]
+  T      T       T         T        T
+  T      F       F         T        F 
+  T      T       T         T        T
+  T      F       F         T        F
+  F      F       F         F        T
+
+slice,pop,length
+
+  DONM: DOCUMENT OBJECT MODEL(look at your page as a tree with branches and leaves){
+    It controls the following in your webpage-
+    -- Selection
+    -- Updating
+    -- Deleting
+    -- Searching
+    -- creating
+    -- changing
+  }
+  In JS: 
+  cheat sheet
+  how to get elements through your page JavaScript{
+    -- decument.getElementById
+  }
+
+  JS is a static programming language
+  //string, int, list/array, objects, array is also an objects
+  // 
+  //
+  //
+
+
+  event in js (it is different from event loop)
+
+  FUNCTIONS IN JS:
+
+SPC-- Separation of concern
+CS-- Code Segregation
+int- if u code isnt running ask yourself which part isint running(each code should have its own functions)
+keywords or reserved words: 
+a. functions
+
+we have:
+Required Parameter & Optional Parameter
+default value-- saying where we cn declare an optional value
+curly braces houses your coded block and it houses ur implementation
+function invocation-- if means when we done implementing a code we are calling it back
+when u add sth thats not a number to a number except is a string in Javascript is called = NaN
+
+Spread Operator---
+
+steps on knowing what to do in JS:
+-- Statement
+-- Decision
+-- Workflow / Algorithm / Process
+**
+
+# learn this topics
+Hoisting in JS
+Higher order functions
+function declaration and function expression and function invocation
+Sicrenious and Insicrenious
+types of event
+
+# Learnig Github
+vcs and ds

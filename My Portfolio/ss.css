@@ -1,0 +1,261 @@
+/* Mobile */
+
+@media (max-width:450px) {
+    nav button {
+        margin: 13px 0 0 -50px;
+        font-size: 18px;
+        display: inline;
+    }
+
+    ul li {
+        position: relative;
+        left: -22px;
+    }
+
+    ul li:hover {
+        transform: none;
+        position: static;
+    }
+
+    /* myself */
+    #Myself {
+        overflow: hidden;
+    }
+
+    #container {
+        left: 80px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+    #my-name {
+        font-size: 20px;
+    }
+
+    .surname {
+        font-size: 20px;
+    }
+
+    .career {
+        font-size: 20px;
+        font-weight: 600px;
+    }
+
+    #social-icons {
+        margin: 10px 0 0 0;
+        word-spacing: 2px;
+    }
+
+    .mypic {
+        position: relative;
+        left: -60px;
+    }
+
+    /* about-me */
+    #About-Me {
+        margin-top: -80px;
+    }
+
+    #About-Me div p {
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #About-Me img {
+        display: none;
+    }
+
+    #About-Me div {
+        width: 100%;
+    }
+
+    #About-Me div span {
+        font-size: 18px;
+    }
+
+    /* services */
+    #services {
+        width: 100%;
+        margin: -50px 0 100px 0;
+    }
+
+    #services h2 {
+        text-align: center;
+        font-size: 35px;
+        word-spacing: 5px;
+    }
+
+    #services h2 span {
+        font-size: 35px;
+        word-spacing: 5px;
+        color: var(--primary-color);
+    }
+
+    #my-works {
+        width: 100%;
+        margin: 20px 0 0 -20px;
+        align-items: center;
+    }
+
+    .frontend {
+        width: 335px;
+        height: 330px;
+        padding: 5px;
+        margin: 20px 0 0 30px;
+        border-width: 2px;
+    }
+
+    .frontend .subject,
+    .backend .subject,
+    .fullstack .subject {
+        margin-top: -7px;
+    }
+
+    .backend {
+        width: 330px;
+        height: 330px;
+        padding: 5px;
+        margin: 20px 0 0 30px;
+        border-width: 2px;
+    }
+
+    .fullstack {
+        width: 330px;
+        height: 330px;
+        padding: 5px;
+        margin: 20px 0 0 30px;
+        border-width: 2px;
+    }
+
+    .frontend button,
+    .backend button,
+    .fullstack button {
+        display: none;
+    }
+
+    /* myskills */
+    #my-skills {
+        margin-top: 30px;
+    }
+
+    #my-skills h2 {
+        text-align: center;
+        font-size: 35px;
+        word-spacing: 5px;
+    }
+
+    #my-skills h2 span {
+        font-size: 35px;
+        word-spacing: 5px;
+        color: var(--primary-color);
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .circle1 img[src="load1.png"] {
+        position: relative;
+        left: -30px;
+    }
+
+    .circle2 img[src="load2.png"] {
+        position: relative;
+        left: -25px;
+    }
+
+    .percentage span[title="create"] {
+        position: relative;
+        left: 220px;
+        font-size: 18px;
+    }
+
+    .percentage span[title="comm"] {
+        position: relative;
+        left: -40px;
+        font-size: 18px;
+    }
+
+    .percentage span[title="team"] {
+        position: relative;
+        top: -5px;
+        left: 120px;
+    }
+
+    .percentage span[title="solve"] {
+        position: relative;
+        top: -5px;
+        left: 80px;
+    }
+
+    /* Projects */
+    #projects {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #projects h2 {
+        text-align: center;
+        font-size: 35px;
+        word-spacing: 5px;
+    }
+
+    #projects h2 span {
+        font-size: 35px;
+        word-spacing: 5px;
+        color: var(--primary-color);
+    }
+
+    .projects .rows-one img,
+    .row-two img {
+        width: 300px;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .projects a div {
+        width: 300px;
+        height: 200px;
+        top: 9px;
+    }
+
+    /* Contact Me */
+    .contact-me {
+        margin: 100px 0 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact-me h2 {
+        font-size: 35px;
+        word-spacing: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-me h2 span {
+        font-size: 35px;
+        word-spacing: 5px;
+        color: var(--primary-color);
+    }
+
+    #info-contact {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-me form {
+        width: 100%;
+    }
+
+    .contact-me form input {
+        margin-top: 10px;
+    }
+
+    .contact-me form button {
+        margin-top: 10px;
+    }
+}

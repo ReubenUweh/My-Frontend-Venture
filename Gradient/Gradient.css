@@ -1,0 +1,244 @@
+body{
+    background-color: white;
+    font-family: 'Segoe UI';
+}
+    /* First Page */
+main{
+    margin: 50px auto;
+    width: 380px;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, #FF9980, #FFDDA4, #FEB383, #FFE986, #FED53F, #FF9A29);
+}
+
+section{
+    padding: 15px;
+ }
+
+ section span{
+     font-weight: 700;
+     margin: 0 230px 0 10px;
+ }
+
+ #logo{
+    width: 230px;
+    height: 230px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    top: 160px;
+    left: 58px;
+ }
+
+ #logo a{
+    position: relative;
+    text-decoration: none;
+    font-size: 27px;
+    color: white;
+    font-weight: 800;
+    top: 75px;
+ }
+
+ footer{
+    width: 140px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: black;
+    position: relative;
+    top: 370px;
+    left: 120px;
+ }
+
+ /* Second Page */
+
+ #main{
+        margin: 50px auto;
+        width: 380px;
+        height: 700px;
+        background-image: linear-gradient(to bottom, #3EDEFF, #3dc4bf, #75d8f9, #ea9191);
+}
+
+#main div{
+    margin-top: 40px;
+}
+
+#main div img{
+    width: 350px;
+}
+
+#main .about{
+    margin-top: -15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#main .write-up{
+    text-align: center;
+    font-size: 13px;
+    margin: -15px 0 0 0px;
+}
+
+#nav{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+#nav .fa-arrow-left{
+    text-align: center;
+    background-color: transparent;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+#nav span{
+    font-size: 65px;
+}
+
+#nav .dot{
+    font-size: 120px;
+    color: #9824b8;
+}
+
+#nav .fa-arrow-right{
+    text-align: center;
+    background-color: #9824b8;
+    color: #fff;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    font-size: 20px;
+    margin-left: 65px;
+}
+
+ #info{
+    word-spacing: 253px;
+    position: relative;
+    top: -70px;
+    left: 30px;
+    font-weight: 700;
+ }
+
+ #info span:nth-child(2){
+    color: #9824b8;
+ }
+
+ .footer{
+    width: 140px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: black;
+    position: relative;
+    top: -100px;
+    left: 125px;
+ }
+
+ /* 3rd Page */
+
+ #main2{
+    margin: 50px auto;
+    width: 380px;
+    height: 700px;
+    background-image: linear-gradient(to bottom, #3EDEFF, #3dc4bf, #74c4de, #3EDEFF);
+}
+
+ .logo{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 95px;
+ }
+
+ .logo .words{
+    position: relative;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+ }
+
+form{
+    margin: 5px 0 0 20px;
+ }
+
+ form label{
+    position: relative;
+    top: 10px;
+    font-style: 8px;
+    font-weight: 700;
+ }
+
+ form input{
+    background-color: #fff;
+    height: 35px;
+    width: 330px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+form #text{
+    background-color: #fff;
+    height: 75px;
+    width: 330px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+button{
+    height: 30px;
+    width: 350px;
+    margin: 15px 0 0 20px;
+    padding: 23px;
+    text-align: center;
+    border-radius: 50px;
+    word-spacing: 5px;
+}
+
+button span{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    top: -10px;
+}
+
+button i{
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+}
+
+#info1{
+    text-align: center;
+}
+
+#info1 span{
+    font-size: 12px;
+    color: #faf2f2;
+}
+
+.exit{
+    width: 140px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 20px;
+    left: 125px;
+}

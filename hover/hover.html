@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+     body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        background-image: linear-gradient(135deg, #0d0d0d, #1a0033, #000033);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        }
+
+        
+    main{
+        width: 430px;
+        height: 90px;
+        background-color: #111;
+        margin: 0 auto;
+        z-index: 5;
+        position: relative;
+        top: 200px;
+        border-radius: 0 0 20px 20px;
+        border: 2px solid whitesmoke;
+    }
+
+    section{
+        margin: 30px 0 0 30px;
+    }
+
+    section span{
+        margin-right: 20px;
+        visibility: hidden;
+    }
+
+    section i{
+        visibility: visible;
+    }
+
+    section #one:hover{
+        visibility: visible;
+        background-color: rgb(231, 156, 231);
+        color: purple;
+        border-radius: 50px 50px 50px 50px;
+        padding: 10px;
+    }
+
+    section #two:hover{
+        visibility: visible;
+        background-color: rgb(245, 209, 221);
+        color: palevioletred;
+        border-radius: 50px 50px 50px 50px;
+        padding: 10px;
+    }
+
+    section #three:hover{
+        visibility: visible;
+        background-color: rgb(220, 220, 127);
+        color: rgb(171, 171, 3);
+        border-radius: 50px 50px 50px 50px;
+        padding: 10px;
+    }
+
+    section #four:hover{
+        visibility: visible;
+        background-color: rgb(159, 159, 236);
+        color: blue;
+        border-radius: 50px 50px 50px 50px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <span id="one"><i class="fa fa-home" aria-hidden="true"></i> Home</span>
+            <span id="two"><i class="fa fa-heart" aria-hidden="true"></i> Likes</span>
+            <span id="three"><i class="fa fa-search" aria-hidden="true"></i> Search</span>
+            <span id="four"><i class="fa fa-user" aria-hidden="true"></i> Profile</span>
+        </section>
+    </main>
+</body>
+</html>

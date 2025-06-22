@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            background-image: linear-gradient(135deg, #0d0d0d, #1a0033, #000033);
+            background-size: cover;
+            background-repeat: no-repeat;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main{
+            width: 350px;
+            height: 600px;
+            background-color: #fff;
+            margin: 0 auto;
+            z-index: 5;
+            position: relative;
+            top: 25px;
+            border-radius: 20px;
+            border: 5px solid whitesmoke;
+        }
+
+        section{
+           padding: 10px;
+        }
+
+        section span{
+            font-weight: 600;
+            margin-right: 215px;
+        }
+
+        #music-bar{
+            height: 90px;
+            width: 300px;
+            background-image: linear-gradient(135deg, #0d0d0d, #1a0033, #000033);
+            border-radius: 100px 0 0 100px;
+            margin: 5px 0 0 20px;
+            overflow: hidden;
+        }
+
+        #music-bar i{
+            position: relative;
+            bottom: 35px;
+            background-color: #0b0b72;
+            padding: 15px;
+            border-radius: 100%;
+            color: white;
+        }
+
+        #music-bar .wave{
+            position: relative;
+            left: 190px;
+            bottom: 90px;
+            transform: rotate(180deg);
+        }
+
+        #col1{
+            display: inline-block;
+            margin: 5px 0 0 50px;
+        }
+
+        #col1 .row{
+            width: 110px;
+            height: 110px;
+            background-image: linear-gradient(#0b0b72, #1a0033);
+            border-radius: 100px 100px 0 100px;
+        }
+
+        #col1 .row1{
+            width: 110px;
+            height: 110px;
+            background-color: rgb(220, 215, 215);
+            border-radius: 0 0 0 400px;
+        }
+
+        #col2{
+            display: inline-block;
+            position: absolute;
+            top: 142px;
+            margin: 0 0 0 4px; 
+        }
+
+        #col2 .row3{
+            width: 110px;
+            height: 110px;
+            background-color: rgb(220, 215, 215);
+            border-radius: 100px 100px 0 0;
+        }
+
+        #col2 .row4{
+            width: 110px;
+            height: 110px;
+            background-image: linear-gradient(rgb(208, 208, 83),rgb(235, 235, 25));
+            border-radius: 100px 100px 100px 100px;
+        }
+
+        #img1{
+            position: relative;
+            top: 10px;
+            right: 10px;
+        }
+
+        .spiral1{
+            position: relative;
+            top: 30px;
+            left: 20px;
+            transform: rotate(750deg);
+        }
+
+        .spiral2{
+            position: relative;
+            top: 30px;
+            left: 62px;
+            transform: rotate(75deg);
+        }
+
+        #img2{
+            position: relative;
+            right: 10px;
+        }
+
+        #choice{
+            margin-top: 3px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        #choice span{
+            color: #0b0b72;
+        }
+
+        #rem{
+            font-size: 11px;
+            font-weight: 600;
+            color: #9f9f9f;
+            text-align: center;
+        }
+
+        #button button{
+            background-color: #0b0b72;
+            color: #ffffff;
+            width: 300px;
+            height: 45px;
+            border-radius: 50px 50px 50px 50px;
+            margin: 10px 0 0 10px;
+        }
+
+        #sign-in{
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            margin: 8px 0 0 0;
+        }
+
+        .dash{
+            height: 5px;
+            width: 130px;
+            background-color: rgb(4, 1, 15);
+            margin: 0 auto;
+            position: relative;
+            top: 35px;
+            border-radius: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Time and Notification -->
+        <section>
+            <span>9.41</span>
+            <i class="fa fa-signal" aria-hidden="true"></i>
+            <i class="fa fa-wifi" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+        </section>
+        <div id="music-bar">
+            <img src="wave.png" alt="" width="140px">
+            <i class="fa fa-play 4x" aria-hidden="true"></i>
+            <img src="wave.png" alt="" width="130px" class="wave">
+        </div>
+        <!-- First Col -->
+        <div id="col1">
+            <div class="row">
+                <img src="gohp.png" alt="" width="150px" id="img1">
+            </div>
+            <div class="row1">
+                <img src="spiral.png" alt="" width="50px" class="spiral1">
+            </div>
+        </div>
+        <!-- Second Col -->
+         <div id="col2">
+            <div class="row3">
+                <img src="spiral.png" alt="" width="50px" class="spiral2">
+            </div>
+            <div class="row4">
+                <img src="hpg.png" alt="" width="130px" id="img2">
+            </div>
+         </div>
+         <div>
+         <p id="choice"><span>Find and Listen</span> Your<br>Favourite Artist Music!</p>
+         </div>
+         <div id="rem">
+            Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Ducimus, voluptatem nesciunt.
+         </div>
+            <!-- Link to my Music Page -->
+         <div id="button">
+            <a href="musicpage.html">
+                <button>Let's Get Started</button>
+              </a>
+         </div>
+         <p id="sign-in">Already have an account?<a href="musicpage.html"> Sign In</a></p>
+         <div class="dash">
+            &nbsp;
+         </div>
+    </main>
+</body>
+</html>

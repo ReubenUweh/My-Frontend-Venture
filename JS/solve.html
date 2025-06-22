@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //mean value
+        const score = [0, 1, 2, 3, 4, 5];
+        const frequency = [3, 4, 4, 8, 5, 8];
+
+        //value
+        let sumFrequency = 0;
+        let sumFx = 0;
+        //for mean
+        for (let f = 0; f < score.length; f++){
+            sumFrequency += frequency[f];
+            sumFx += frequency[f] * score[f];
+        }
+    console.log("Solution for finding the frequency",sumFrequency);
+    console.log(sumFx);
+
+    const mean = sumFx / sumFrequency;
+    console.log(mean)
+    //Standard deviation
+    let fdSqur = 0;
+    for (let f = 0; f < score.length; f++){
+        const d = score[f] - mean;
+        const dSquared = d * d;
+        const dSqur = frequency[f] * dSquared;
+        fdSqur += dSqur;
+    }
+    console.log(fdSqur)
+    </script>
+</body>
+
+</html>

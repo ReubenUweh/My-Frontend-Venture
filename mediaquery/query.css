@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container{
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce{
+    from{
+        margin-top: 10px;
+    }
+    to{
+        margin-top: 20px;
+    }
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ipad-mini {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.ipad-mini p {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (width:768px) {
+    .ipad-mini {
+        display: block;
+    }
+}
+
+.ipad-air {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.ipad-air p {
+    font-size: 35px;
+    text-align: center;
+}
+
+@media only screen and (width:820px) {
+    .ipad-air {
+        display: block;
+    }
+}
+
+.ipad-pro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.ipad-pro p {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (width:1024px) {
+    .ipad-pro {
+        display: block;
+    }
+}
+
+.s-pro7 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.s-pro7 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (width:912px) {
+    .s-pro7 {
+        display: block;
+    }
+}
+
+.s-duo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.s-duo p {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (width:540px) {
+    .s-duo {
+        display: block;
+    }
+}
+
+.z-fold {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.z-fold p {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (width:344px) {
+    .z-fold {
+        display: block;
+    }
+}
+
+.asus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.asus p {
+    font-size: 25px;
+    text-align: center;
+}
+
+@media only screen and (width:853px) {
+    .asus {
+        display: block;
+    }
+}
+
+.a51 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.a51 p {
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (width:412px) {
+    .a51 {
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+.nest-hub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.nest-hub p {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (width:1024px) {
+    .nest-hub {
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+.nest-hubmax {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.nest-hubmax p {
+    font-size: 35px;
+    text-align: center;
+}
+
+@media only screen and (width:1280px) {
+    .nest-hubmax {
+        display: block;
+    }
+}
+
+.I-X {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.I-X p {
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (width:375px) {
+    .I-X {
+        margin-top: 20px;
+        display: block;
+    }
+}

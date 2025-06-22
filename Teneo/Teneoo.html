@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI';
+        }
+
+        /*Header Session*/
+
+        #main-container{
+            width: 400px; 
+            margin-left: 35%; 
+            min-height: 500px; 
+            background-color: #F9FBFA;
+        }
+
+        header{
+            background-color: lightblue; 
+            width: 100%; 
+            height: 70px; 
+            overflow: hidden;
+        }
+
+        .img1{
+            height: 30px; 
+            padding: 25px 0 0 15px;
+        }
+
+        h2{
+            display: inline; 
+            position: absolute; 
+            padding: 5px 0 0 0;
+        }
+
+        #header-name{
+            font-size: 12px; 
+            padding: 0 0 0 3px; 
+            color: gray;
+        }
+
+        .img2{
+            position: absolute; 
+            padding: 25px 0 0 220px; 
+            height: 30px;
+        }
+
+        #log-out{
+            position: absolute; 
+            padding: 25px 0 0 260px; 
+			color: black; 
+            font-size: 22px; 
+            text-decoration: none;
+        }
+
+        /*Body Session*/
+
+        #connect-bar{
+            background-color: gainsboro; 
+            text-align: center;
+			border-radius: 15px;
+			margin: 15px 120px 0 120px;
+			padding: 4px 0 4px 0;
+        }
+
+        #beep-bar{
+            display: incline; 
+            background-color: red; 
+            width: 1px; 
+			padding: 3px 0 0 8px; 
+            position: absolute;
+			margin: 8px 0 0 15px; 
+            height: 5px; 
+            border-radius: 100%
+        }
+
+        .beep-sign{
+            color: red;
+        }
+
+        #box-container{
+            background-color:#F3F4F6; 
+            width: 40%; 
+            padding:10px; 
+            margin: 10px 0 0 10px; 
+            height: 50px;
+        }
+
+        #box-name{
+            font-size: 14px;
+        }
+
+         #box-name1{
+            margin-left: 10%;
+         }
+
+         .box-name2{
+            font-size: 30px;
+         }
+
+         #box{
+            background-color:#F3F4F6; 
+            width: 165px; 
+            padding:10px; 
+            margin: 10px 0 190px 200px; 
+            top: 123px; 
+			height: 50px; position: absolute;
+         }
+
+         #box1{
+            font-size: 14px;
+         }
+
+         #box2{
+            margin-left: 10%;
+         }
+
+         #box3{
+            border: 1px solid gray; 
+            border-radius: 8px; 
+            right: 10px; 
+            width: 370px; 
+            margin: 13px 0 0 17px;
+         }
+
+         .box-name3{
+            margin-left: 8px;
+         }
+
+         .box-name4{
+            padding-left: 185px;
+         }
+         #connect{
+            margin: 7px 0 4px 40px
+         }
+
+         #Connect1{
+            background-color: rgba(51, 29, 217, 1); 
+            color: white; 
+			width: 360px; 
+            text-align: center; 
+            margin: 10px 0 0 20px; 
+			padding: 7px; border-radius: 4px;
+         }
+
+         #Connect2{
+            background-color: rgba(0, 0, 0, 1); 
+            color: white; 
+			width: 360px; 
+            text-align: center; 
+            margin: 10px 0 0 20px; 
+			padding: 8px; 
+            border-radius: 4px;
+         }
+
+         #img3{
+            position: absolute; 
+            margin-right: 10px;
+         }
+
+         #img4{
+            height: 23px; 
+            padding-left: 5px;
+         }
+
+         #share{
+            width: 240px; 
+            margin: 7px 0 0 87px; 
+            text-align: center; 
+            padding: 10px 0; 
+            border: 1px solid grey; 
+            border-radius: 6px;
+         }
+
+         .img5{
+            position:absolute;
+            width:18px
+         }
+
+         #home{
+            border:1px solid grey;  
+            margin-top:10px; 
+            width:100%
+         }
+
+         #home1{
+            background-color:#3A7FF0; 
+            width:49%; 
+            display:inline-block; 
+            padding:0 0 4px 0;
+            border:none;
+         }
+
+         #home2{
+            background-color:white; 
+            padding:15px 0;
+         }
+
+         #home3{
+            width: 20px;
+			position: absolute; 
+            padding-left: 60px; 
+            margin-top: 0px;
+         }
+
+         #home4{
+            text-decoration:none; 
+            color:black; 
+            padding-left:85px;
+         }
+
+         #support{
+            background-color:#F3F4F6; 
+            padding:15px 0 19px 0; 
+            width:49.7%; 
+            display:inline-block
+         }
+
+         #support1{
+            width: 20px; 
+            position: absolute; 
+            padding-left: 50px; 
+            margin-top: 1px;
+         }
+
+         #support2{
+            text-decoration:none;
+            color:black;
+            padding-left:75px
+         }
+    </style>
+</head>
+
+<body>
+    <main id="main-container">
+        <!--Heeader session-->
+		<header>	
+			<img src="circle-loading.png" class="img1">
+			<h2> teneo<small id="header-name">BETA</small></h2>
+			<img src="logout.png" class="img2"> 
+			<a href="" id="log-out">Log out</a>
+		</header>
+			<div id="connect-bar">
+				<div id="beep-bar">&nbsp;
+				</div>
+				<span class="beep-sign">Not Connected</span>
+			</div>
+                <!--Structure of the Page-->
+			<div id="box-container">
+			<div id="box-name">Teneo points today
+			<span id="box-name1"><img src="star.svg" width="15px"></span>
+			</div>
+			<div class="box-name2">300</div>
+			</div>
+			<div id="box">
+			<div id="box1">Teneo points total
+			<span id="box2"><img src="star.svg" width="15px"></span>
+			</div>
+			<div class="box-name2">136,875</div>
+			</div>
+            <!--Next part of  the page -->
+			<div id="box3">
+				<div class="box-name3">Potential next point<span class="box-name4">0.00</span></div>
+				<hr width="340px">
+				<div class="box-name3">Next heartbeat<span class="box-name4">15ms 0s</span></div>
+			</div>
+			<p id="Connect">Connect your node to start earning rewards.</p>
+			<div id="Connect1">Connect Node
+			</div>
+			<div id="Connect2">Go to Dashboard<span id="img3">
+					<img src="right-up.png" id="img4"></span>
+			</div>
+			<div id="share">Share Refferal Code
+					&nbsp;<img src="R.svg" class="img5">
+			</div>
+			<div id="home">
+			 <div id="home1">
+	  		 <div id="home2"><img src="Home.svg" id="home3">
+	  				 <a href="" id="home4">Home</a></div>
+			 </div>
+	 		<div id="support">
+	   				<img src="Q.svg" id="support1">
+	   				<a href="" id="support2">Support</a>
+	 </div>
+	</div>
+	</main>
+</body>
+</html>

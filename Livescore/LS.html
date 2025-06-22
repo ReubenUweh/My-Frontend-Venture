@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Livescore</title>
+    <style>
+		#main{
+			background-color:#111111; 
+            color:white; 
+            width:400px; 
+            max-height:100vh; 
+            overflow-y:scroll;
+			margin:0 auto; 
+            font-family:'segoe ui'
+		}
+					/* header */
+		header{
+			padding:5px 0 5px 50px;
+            font-size:14px; 
+            position: relative
+		}
+
+		.scores{
+			padding:0 20px
+		}
+
+		.betting{
+			padding:0 37px 0 12px; 
+            border-right:1px solid white; 
+            border-left:1px solid white
+		}
+
+		.headimg1{
+			position:absolute; 
+            padding:2px
+		}
+
+		.headimg2{
+			position:absolute; 
+            padding:2px 0 0 4px
+		}
+
+		/* sports section */
+		#sport-container{
+			margin:20px 0 0 0; 
+            padding:10px 15px 0 15px; 
+            height: 50px; 
+            font-size:14px; 
+            font-weight:450;
+		}
+
+		.sport1{
+			background-color:white; 
+      padding:5px 16px; 
+            border-radius:50px
+		}
+
+		.sport2{
+			background-color:#181818; 
+            margin: 5px 0 0 5px; 
+            padding:5px 16px; 
+            border-radius:50px
+		}
+
+		.a1{
+			color:black; 
+            text-decoration:none
+		}
+
+		a{
+			color:white; 
+            text-decoration:none
+		}
+
+		/* date section */
+		#date-container{
+			padding:5px 0 5px 15px; margin:20px 0 10px 0; font-size:11px; font-weight:600; position: relative
+		}
+
+		.live-box{
+			background-color:white; color:black; font-weight:bold; margin:5px 0; position:absolute; padding:3px; border-radius:4px
+		}
+
+		.inline{
+			display: inline-block;
+		}
+
+		.day1{
+			margin-left:55px
+		}
+
+		.day2, .day3{
+			margin-left: 20px;
+		}
+
+		.day3{
+			color:#FF6B00
+		}
+
+		.day4{
+			margin-left:25px
+		}
+
+		.txtsize{
+			font-size:8px
+		}
+
+		hr{
+			margin:0
+		}
+		/* knock out box */
+		.knockout-box{
+			padding:6px 0 0 13px; font-size:15px; margin:0 0 10px 0; position: relative
+		}
+
+		.knockout-img{
+			display:inline-block; position:absolute; margin-top:8px;
+		}
+
+		.knockout{
+			display:inline-block; padding-left:40px; font-weight:600
+		}
+
+		.sub{
+			font-size:11px
+		}
+
+		.img-right{
+			width:25px; position:absolute; padding-left:185px; margin-top:7px
+		}
+
+		/* champions league match */
+		.champion-box{
+			background-color:#181818; padding:10px; margin:4px 10px; border-radius:10px; position: relative
+		}
+
+		.left-box{
+			font-size:12px; display:inline-block
+		}
+
+		.left-value{
+			padding-top:8px
+		}
+
+		.club1-img{
+			width:19px; margin: 0 0 4px 0
+		}
+
+		.club1-align1{
+			font-size:15px; display:inline-block
+		}
+
+		.club1-align2{
+			position:absolute; padding:0 0 0 8px
+		}
+		.club1-right{
+			width:25px; 
+            padding:0 0 7px 210px; 
+            display:inline-block
+		}
+        
+		.club1-right2{
+			width:25px; 
+            padding:0 0 7px 260px
+		}
+
+    .space{
+      position: absolute; 
+      padding: 0 0 0 8px;
+    }
+
+		/* remaining clubs */
+		.club2{
+			background-color:#181818; 
+            padding:10px; 
+            margin:4px 10px; 
+            border-radius:10px; 
+            position: relative
+		}
+		.club2-date{
+			font-size:12px; 
+            display:inline-block; 
+            position:absolute; 
+            padding-top:16px
+		}
+		.club2-align{
+			font-size:15px; 
+            display:inline-block; 
+            padding-left:35px
+		}
+		.club2-img{
+			width:19px; 
+            margin: 0 0 4px 0
+		}
+		.club2-right{
+			width:25px; 
+            padding:0 0 7px 260px
+		}
+
+					/* footer */
+		footer{
+			font-size:12px;
+		}
+
+		.footer1{
+			background-color:#333333;  
+            padding:40px 10px
+		}
+
+		.under{
+			text-decoration:underline
+		}
+
+		.footer-container1{
+			margin:0 10px; width:175px
+		}
+
+		.footer-size{
+			font-size:13px
+		}
+
+		.footer-container2{
+			width:175px
+		}
+        
+		.footer-container3{
+			margin-left:10px; width:175px
+		}
+
+		.footer-pad1{
+			padding:10px 0;
+		}
+
+		.footer-container4{
+			text-align:center
+		}
+
+		.footer-container5{
+			margin-top:40px
+		}
+
+		.footer-size2{
+			font-size:15px;
+		}
+
+		.footer-logo{
+			width:90px; 
+      margin: 30px 0 15px 0
+		}
+
+    #logo{
+      display:  flex;
+      
+    }
+
+		#advert{
+			position:absolute; 
+            top:  530px; 
+            padding:  0 0 0 17px;
+		}
+
+		#nav{
+			position:fixed; 
+            bottom: 0; 
+            width: 383px; 
+            padding: 3px 0; 
+            background-color: #111111; 
+            text-align: center;
+		}
+
+		.nav-data{
+			padding-top:1px; 
+            font-size:10px;
+		}
+
+		.nav-box{
+			padding-left:40px
+		}
+
+		.nav-logo{
+			 margin-left:40px; 
+             background-color:#FF6B00; 
+             margin-bottom:5px;
+    		 text-align:center; 
+             padding:0 10px; 
+             font-weight:700; 
+             border-radius:10px; 
+             font-size:12px;
+		}
+
+		.nav-logo-data{
+			font-size:10px;
+		}
+	</style>
+</head>
+<body style="margin:0">
+    <main id="main">
+        <header>
+          <span class="scores">Scores</span>
+          <span class="betting">Betting 
+           <img class="headimg1" src="up-arrow.svg"></span>
+          <span class="scores">Casino<img src="up-arrow.svg"></span>
+        </header> 
+        
+        <div style="margin:10px 0; padding:0 15px">
+          <span><img src="col.jpg" width="17px" height="17px"></span>
+          <span><img src="logo.jpg" style="width:125px; padding:0 90px"></span>
+          <span><img src="search.jpg" width="19px" height="19px"></span>
+        </div>
+                        <!-- sports -->
+        <div id="sport-container">
+          <span class="sport1"><a class="a1" href="">football</a></span>
+          <span class="sport2"><a class="a2" href="">Hockey</span>
+          <span class="sport2">Basketball</span>
+          <span class="sport2">Tennis</span>
+        </div>  
+
+      <!-- days section -->
+        <div id="date-container">
+          <div class="live-box">LIVE</div>
+          <div class="day1 inline">SUN<br><span class="txtsize">06 APR</span></div>
+          <div class="day2 inline">MON<br><span class="txtsize">07 APR</span></div>
+          <div class="day3 inline">TODAY<br><span class="txtsize">09 APR</span></div>
+          <div class="day2 inline">WED<br><span class="txtsize">10 APR</span></div>
+          <div class="day2 inline">THU<br><span class="txtsize">10 APR</span></div>
+          <div class="day4 inline"><img src="calendar.jpg"></div>
+          <div class="inline"><img src="down.jpg"></div>
+        </div>
+                              <hr>
+                              <!-- knockout box -->
+        <div class="knockout-box">
+          <div class="knockout-img">
+            <img src="stars.jpg" width="26px"></div>
+          <div class="knockout">Knockout Stage<br>
+            <span class="sub">Champions League</span></div>
+          <img class="img-right" src="right-arrow.jpg">
+        </div>
+      
+                <!-- champions league -->
+      
+        <div class="champion-box">
+          <div class="left-box" style="font-size:12px; display:inline-block"><img src="headset.jpg" width="20px">
+            <div class="left-value">20:00</div>
+          </div>
+          <div  class="club1-align1">
+            <img class="club1-img" src="Ars.jpg"><span class="club1-align2">
+            <a class="a2" href="">Arsenal</a></span><br>
+            <img src="rm.jpg" width="19px"><span class="club1-align2">
+            <a class="a2" href="">Real Madrid</a></span>
+          </div>
+          <div class="club1-right"><span>3<br></span><span>0</span></div>
+        </div>
+            
+        <div class="champion-box">
+          <div class="left-box"><img src="headset.jpg" width="20px">
+            <div class="left-value">20:00</div>
+          </div>
+          <div class="club1-align1">
+            <img class="club1-img" src="Fcb.jpg"><span class="club1-align2">
+            <a class="a2" href="">Bayern Munich</a></span><br>
+            <img src="Inter.jpg" width="19px"><span class="club1-align2">
+            <a class="a2" href="">Inter</a></span>
+          </div>
+          <img class="club1-right2" src="star.jpg">
+        </div>
+      
+        <div class="knockout-box">
+          <div class="knockout-img">
+            <img src="CE.jpg" width="26px"></div>
+          <div class="knockout">Championship<br>
+            <span class="sub">England</span></div>
+          <img class="img-right" src="right-arrow.jpg">
+        </div>
+      
+                            <!-- remaing clubs -->
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="BR.jpg"><span class="space">
+            <a href="">Blackburn Rovers</a></span><br>
+            <img src="SW.jpg" width="19px"><span class="space">
+            <a href="">Sheffield Wednesday</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="Bc.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Bristol City</a></span><br>
+            <img src="alb.jpg" width="19px"><span class="space">
+            <a href="">West Bromwich Albion</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="Dc.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Derby Country</a></span><br>
+            <img src="Burnley.jpg" width="19px"><span class="space">
+            <a href="">Burnley</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="Nc.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Norwich City</a></span><br>
+            <img src="crown.jpg" width="19px"><span class="space">
+            <a href="">Sunderland</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="Pne.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Preston North End</a></span><br>
+            <img src="CC.jpg" width="19px"><span class="space">
+            <a href="">Cardiff City</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="SU.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Sheffiled United</a></span><br>
+            <img src="mw.jpg" width="19px"><span class="space">
+            <a href="">MillWall</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="stoke.jpg" style="width:19px; margin: 0 0 4px 0"><span class="space">
+            <a href="">Stroke City</a></span><br>
+            <img src="lt.jpg" width="19px"><span class="space">
+            <a href="">Luton Town</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="wat.jpg"><span class="space">
+            <a href="">Watford</a></span><br>
+            <img src="hull-city.jpg" width="19px"><span class="space">
+            <a href="">Hull City</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+        <div class="club2">
+          <div class="club2-date">19:45</div>
+          <div class="club2-align">
+            <img class="club2-img" src="mb.jpg"><span class="space">
+            <a href="">Middlesbrough</a></span><br>
+            <img src="Lu.jpg" width="19px"><span class="space">
+            <a href="">Leeds United</a></span>
+          </div>
+          <img class="club2-right" src="star.jpg">
+        </div>
+      
+                            <!-- footer -->
+      
+        <footer>
+          <div class="footer1">
+          <h4>About</h4>
+          <p>LiveScore - Latest Football Scores, Results, Fixtures and Tables</p>
+          <p>The number one destination for real time scores for 
+            <span class="under">Football, Cricket, Tennis, Basketball and Hockey</span>.
+            LiveScore.com is the go-to destination for latest football scores and news from around the world.<br>
+            Up to date tables, fixtures and scores from all the major leagues and competitions throughout the world live as they happen including the  
+            <span class="under">Premier League, La Liga, Serie A, Bundesliga, Ligue 1</span> and Europe’s biggest competitions such as 	  the Champions League and Europa League.<br>
+            That’s not all because international tournaments such as the World Cup, Euros, AFCON, Copa America and Nations League are also at your  	  fingertips. With match info and line-ups thrown into the mix, you need not look anywhere else for football statistics.<br><br>
+       
+      
+             <span class="under">English | Nederlands | Português | Español | Български | คนไทย | Bahasa Indonesia</span><br><br>
+      
+            We improve our products and advertising by using Microsoft Clarity to see how you use our website. By using our site and accepting Analytics 	  Cookies, you agree that we and Microsoft can collect and use this data. Our  
+            <span class="under">Privacy Policy has more details.</span>
+          </p>
+           </div>
+      
+      
+           <div class="footer-container1 inline">
+          <p class="footer-size"> Football</p>
+          <p>Premier League Scores</p>
+          <p>Premier League Standings</p>
+          <p>La Liga Scores</p>
+          <p>Bundesliga Scores</p>
+          <p>Championship Scores</p>
+          <p>Serie A Scores</p>
+           </div>
+      
+           <div class="footer-container2 inline"><br>
+          <p class="footer-size">Other Sports </p>
+          <p>Cricket Scores</p>
+          <p>Tennis Score</p>
+          <p>Basketball Scores</p>
+          <p>Ice Hockey Scores</p><br><br>
+           </div>
+      
+           <div class="footer-container3 inline">
+          <p class="footer-size footer-pad1"> Trending</p>
+          <p>Today's Football Scores</p>
+          <p>Premier League Standings</p>
+          <p>Football on TV</p>
+          <p>Champions League Scores</p>
+          <p>IPL Scores</p>
+          <p>NBA Scores</p>
+           </div>
+      
+           <div class="footer-container3 inline">
+          <p class="footer-size footer-pad1"> Betting</p>
+          <p>Betting Sites UK</p>
+          <p>Betting Sites IN</p>
+          <p>Betting Sites US</p>
+          <p>bet365 Bonus Code US</p>
+          <p>Betting Sites ZA</p>
+          <p>Betting Sites CA</p>
+           </div>
+      
+          <div class="footer-container4">
+          <p class="footer-size footer-pad1">Casino</p>
+          <p>Casino Sites UK</p>
+          <p>Free Spins UK</p>
+          <p>Sweepstakes Casinos US</p>
+          <p>No Deposit Casinos US</p>
+          <p>Best Slots Sites US</p>
+          <p>Casino Sites CA</p>
+           </div>
+           <div class="footer-container1">
+          <p class="footer-container5 footer-size2">Casino</p><hr>
+          <p class="footer-size2">FAQ</p><hr>
+          <p class="footer-size2">Contact</p><hr>
+          <p class="footer-size2">Privacy Notice</p><hr>
+          <p class="footer-size2">Advertise</p><hr>
+      
+          <img class="footer-logo" src="logo.jpg">
+           <div id="logo">
+          <img src="gp.jpg"width="120px">
+          <img src="Apple.svg">
+           </div>
+      
+          <p class="footer-container4">&copy; 1998-2025 LiveScore Limited<br>
+          Careers |
+          News Publishers |
+          Cookie Policy |
+          Terms of Use |
+          Modern Slavery Statement |
+          Corporate</p>
+        </div>
+      
+      <br>
+      <br>
+      <br>
+           </div>
+        </footer>
+      
+      
+      
+      
+      
+      
+          <div id="advert"><img src="ad.jpg" width="340px"></div>
+      
+        <div id="nav">
+          <div class="inline day3">
+          <div class="inline"><img src="score.svg" width="19px"></div>
+          <div class="nav-data">Scores</div>
+          </div>
+          <div class="nav-box inline">
+          <div class="inline"><img src="star.jpg" width="19px"></div>
+          <div class="nav-data">Favourites</div>
+          </div>
+          <div class="nav-box inline">
+          <div class="inline"><img src="news.svg" width="19px"></div>
+          <div class="nav-data">News</div>
+          </div>
+          <div class="inline nav-logo">
+          <div class="inline">LS</div>
+          <div class="nav-logo-data">Bet</div>
+          </div>
+      
+      
+      
+        </div>
+       </main>
+</body>
+</html>

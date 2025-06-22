@@ -1,0 +1,430 @@
+<!DOCTYPE html> 
+<html>
+   <head>
+	<title>WhatsApp</title>
+    <style>
+        body{
+            font-family: 'Segoe UI';
+        }
+
+        #main{
+            background-color: #000000; 
+            overflow-y: scroll; 
+            scrollbar-width: none;
+            width: 370px; 
+            margin: 0 auto; 
+            min-height: 650px; 
+            color: white; 
+            border-radius: 10px;
+        }
+
+        #header{
+            padding: 5px; 
+            position: fixed; 
+            z-index: 5;
+        }
+
+        #img1{
+            background-color: #121212; 
+            border-radius: 100%; 
+            padding: 8px 3px 0 3px; 
+            margin-left: 8px;
+        }
+
+        #img2{
+            background-color: #121212; 
+            border-radius: 100%; 
+            padding: 8px 3px 0 3px; 
+            margin-left: 240px;
+        }
+
+        #img3{
+            background-color: #1dd944; 
+            border-radius: 100%; 
+            padding: 4px 4px 0 4px; 
+            margin-left: 15px;
+        }
+
+        .img{
+            padding-top: 7px; 
+            width: 20px;
+        }
+
+        .img4{
+            width: 15px;
+        }
+
+        h1{
+            margin: 50px 0 0 8px
+        }
+
+        #container{
+            height: 600px;
+        }
+
+        #input{
+            padding-left: 30px; 
+            padding-top: 5px; 
+			margin: 5px 0 0 10px; 
+            width: 350px; 
+            height: 30px; 
+            border: 0; 
+            border-radius: 8px; 
+			background-image: url(search.png); 
+            background-size: 25px; 
+            background-color: #383838;
+			background-repeat: no-repeat; 
+            color: #ffffff;
+        }
+
+        #work{
+            margin: 10px 0 0 15px; 
+            font-size: 13px;
+        }
+
+        #select{
+            background-color: #32cd32; 
+            opacity: 0.8; 
+            padding: 5px 15px; 
+            border-radius: 15px;
+        }
+
+        .select{
+            background-color: #121212; 
+            opacity: 0.8; 
+            padding: 5px 10px; 
+            border-radius: 15px;
+        }
+
+        #Archive{
+            margin: 15px 0 0 0;
+        }
+
+        #Archive-box{
+            margin: 15px 0 0 0;
+        }
+
+        #Archive-name{
+            padding-left: 40px; 
+            font-size: 15px; 
+            color: gray; 
+            z-index: -5;
+        }
+
+        #Archive-number{
+            padding-left: 210px; 
+            font-size: 12px;
+        }
+
+        .hr-line{
+            width: 292px; 
+            margin-left: 73px; 
+            margin-top: 12px; 
+            color: gray; 
+            z-index: -5;
+        }
+
+        .chat-container{
+            margin: 10px 0 0 15px; 
+            position: relative;
+        }
+
+        .chat-name{
+            position: absolute; 
+            margin-left: 10px;
+        }
+
+        #chat-time{
+            position: absolute; 
+            margin-left: 240px; 
+            font-size: 12px;
+        }
+
+        .chat-time{
+            position: absolute; 
+            margin-left: 260px; 
+            font-size: 13px;
+        }
+
+        .pic-size{
+            height: 50px; 
+            width: 50px; 
+            border-radius: 100%;
+        }
+
+        #chat-tick{
+            position: absolute; 
+            margin: 20px 0 0 10px;
+        }
+
+        #chat-emoji{
+            position: absolute; 
+            margin: 3px 0 0 120px;
+        }
+
+        #chat{
+            position: absolute; 
+            margin: 20px 0 0 30px; 
+            font-size: 12px; 
+            color: gray;
+        }
+
+        #chat1{
+            position: absolute; 
+            margin: 20px 0 0 11px; 
+            font-size: 13px; 
+            color: gray;
+        }
+
+        #chat-pin{
+            position: absolute; 
+            margin: 20px 0 0 275px;
+        }
+
+        .chat{
+            position: absolute; 
+            margin: 20px 0 0 10px; 
+            font-size: 12px; 
+            color: gray;
+        }
+
+        .unread{
+            background-color: #1dd944; 
+            border-radius: 100%; 
+            position: absolute; 
+			padding: 4px;  width: 8px; 
+            margin: 20px 0 0 272px; 
+            color: #111111; 
+            font-size: 10px;
+        }
+
+        .hug-emoji{
+            position: absolute; 
+            margin: 2px 0 0 57px;
+        }
+
+        #laugh-emoji{
+            position: absolute; 
+            margin: 20px 0 0 220px;
+        }
+
+        footer{
+            width: 370px; 
+            position: fixed; 
+            bottom: 0px; 
+            background-color: black; 
+            height: 48px; 
+            border-radius: 0  0 10px 10px;
+        }
+
+        #footer-img1{
+            padding: 30px 0 0 22px; 
+            margin-top: 5px;
+        }
+
+        #footer-img2{
+            padding: 30px 0 0 50px; 
+            margin-top: 10px;
+        }
+
+        #footer-img3{
+            padding: 30px 0 0 40px; 
+            margin-top: 10px;
+        }
+
+        #footer-img4{
+            position: absolute; 
+            padding-left: 45px
+        }
+
+        #footer-img5{
+            position: absolute;
+        }
+
+        #chat-unread{
+            background-color: #1dd944; 
+            border-radius: 100%; 
+            position: absolute; 
+            padding: 4px; 
+            margin: 0 0 0 60px; 
+            color: #111111; 
+            font-size: 10px;
+        }
+
+        .img-space{
+            padding: 5px 0 0 0;
+        }
+
+        #settings{
+            padding: 5px 0 0 0; 
+            margin-left: 120px
+        }
+
+        #status-name{
+            position: absolute; 
+            bottom: 5px; 
+            font-size: 12px; 
+            top: 30px; left: 12px;
+        }
+
+        #status-name1{
+            position: absolute; 
+            bottom: 5px; 
+            font-size: 12px; 
+            top: 30px; 
+            left: 105px;
+        }
+
+        #status-name2{
+            position: absolute; 
+            bottom: 5px; 
+            font-size: 12px; 
+            top: 30px; 
+            left: 153px;
+        }
+
+        #status-name3{
+            position: absolute; 
+            bottom: 5px; 
+            font-size: 12px; 
+            top: 30px; 
+            left: 240px;
+        }
+
+        #status-name4{
+            position: absolute; 
+            bottom: 5px; 
+            font-size: 12px; 
+            top: 30px; 
+            left: 310px;
+        }
+    </style>
+   </head>
+<body>
+	<main id="main">
+        <!--Header-->
+		<header id="header">
+		   <div>
+			<span id="img1">
+					<img src="more.png" class="img"></span>
+			<span id="img2">
+			<img src="what-cam.png" class="img"></span>
+			<span id="img3">
+			<img src="plus.png" class="img4"></span>
+		   </div>
+		</header>
+		<h1>Chats</h1>
+
+        <!--Search Bar-->
+		<div id="container">
+		<div>
+			<input type="search" name="search" placeholder="Ask Meta Ai or Search" id="input">
+		</div>
+		<div id="work">
+			<span id="select">All</span>
+			<span class="select">Unread 99+</span>
+			<span class="select">Favorites</span>
+			<span class="select">Groups 99+</span>
+		</div>
+		<div id="Archive">
+			<span id="Archive-box"><img src="storage-box.png" width="25px"></span>
+			<span id="Archive-name">Archive</span>
+			<span id="Archive-number">14</span>
+			<hr class="hr-line">
+		</div>
+			<div class="chat-container">
+				<img src="pic1.jpg" class="pic-size">
+				<span class="chat-name">Myself</span>
+				<span class="chat-time">11:01</span>
+				<span id="chat-tick"><img src="read.png" width="17px"></span>
+				<span id="chat">My Schedule for the day...</span>
+				<span id="chat-pin"><img src="pin.png" width="17px"></span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="pic1.jpg" class="pic-size">
+				<span class="chat-name">Sammy My Guy</span>
+				<span id="chat-emoji"><img src="hug.png" width="17px"></span>				
+				<span id="chat-time">Yesterday</span>
+				<span id="chat1">Oya na</span>
+				<span id="chat-pin"><img src="pin.png" width="17px"></span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="cat.webp" class="pic-size">
+				<span class="chat-name">Michelle ♡ </span>
+				<span class="chat-time">16:04</span>
+				<span class="chat">Not yet but soon</span>
+				<span class="unread">1</span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="7th.jpg" class="pic-size">
+				<span class="chat-name">The 7th
+				<span><img src="goat.png" style="width: 17px;"><img src="pink-cosmos.png" style="width: 17px;"></span>
+				</span>
+				<span class="chat-time">15:45</span>
+				<span class="chat">Evans: Come push ranked</span>
+				<span class="unread">42</span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="community-pic.jpg" class="pic-size">
+				<span class="chat-name">megaMindset ICT 2025 SIWES</span>
+				<span class="chat-time">15:37</span>
+				<span class="chat">Kynetic: I go use am spell sense for you</span>
+				<span id="laugh-emoji"><img src="laugh.png" style="width: 17px;"></span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="pic1.jpg" class="pic-size">
+				<span class="chat-name">My Bro</span>
+				<span class="hug-emoji"><img src="hug.png" width="17px"></span>				
+				<span class="chat-time">13:34</span>
+				<span class="chat">If I come back guyyy no worry</span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="itadori.webp" class="pic-size">
+				<span class="chat-name">David</span>
+				<span class="hug-emoji"><img src="hug.png" width="17px"></span>				
+				<span class="chat-time">13:17</span>
+				<span class="chat">By when tomorrow?</span>
+				<span class="unread">2</span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="lebron.jpg" class="pic-size">
+				<span class="chat-name">Jerry</span>
+				<span class="chat-time">13:07</span>
+				<span class="chat">I never know sha</span>
+				<hr class="hr-line">				
+			</div>
+			<div class="chat-container">
+				<img src="waifu.webp" class="pic-size">
+				<span class="chat-name">Tesa ♡ </span>			
+				<span class="chat-time">12:43</span>
+				<span class="chat">Alright then</span>
+				<span class="unread">1</span>
+				<hr class="hr-line">				
+			</div>
+			</div>
+			<footer>
+				<div>
+					<span id="footer-img1"><img src="updates.png" width="25px" class="img-space"></span>
+					<span id="footer-img2"><img src="telephone.png" width="25px" class="img-space"></span>
+					<span id="footer-img3"><img src="teamwork.png" width="28px" class="img-space"></span>
+					<span id="footer-img4"><img src="chat.png" width="25px" class="img-space"></span>
+					<span id="chat-unread">145</span>
+					<span id="footer-img5"><img src="settings.png" width="25px" id="settings"></span>
+					<div id="status-name">Updates</div>
+					<div id="status-name1">Calls</div>
+					<div id="status-name2">Community</div>
+					<div id="status-name3">Chats</div>
+					<div id="status-name4">Settings</div>
+				</div>
+			</footer>
+</main>
+>
+</body>
+</html>

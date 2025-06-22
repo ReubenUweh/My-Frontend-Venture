@@ -1,0 +1,249 @@
+/* Responsive for screen width 1024px and below */
+/* Media query for responsive nav */
+@media (max-width: 1030px) {
+    header {
+        width: 100%;
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav button {
+        margin: 13px 0 0 -100px;
+        font-size: 18px;
+        display: inline;
+    }
+
+    .fa-bars {
+        display: inline;
+        color: white;
+    }
+
+    ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        top: 30px;
+        left: 1px;
+        line-height: 1.8;
+        background: linear-gradient(135deg, rgb(47, 229, 229), rgb(107, 227, 227), rgb(64, 161, 161));
+        animation: slideDown 0.5s ease forwards;
+    }
+
+    ul li {
+        position: relative;
+        left: -82px;
+    }
+
+    ul li:hover {
+        /* transform: scale(1); */
+        transition: transform 0.5s;
+        position: relative;
+        left: -82px;
+    }
+
+    /* Show menu on icon hover */
+    .nav-toggle ul {
+        display: none;
+    }
+
+    .nav-toggle:hover ul {
+        display: flex;
+        transition: 0.3s;
+    }
+
+    /* *Align Myself Query */
+    #Myself {
+        width: 100%;
+        margin-top: 153px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    #container {
+        width: 70%;
+        margin-left: -100px;
+        padding: 25px 0 0 25px;
+    }
+
+    #my-name {
+        font-size: 40px;
+    }
+
+    .name {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .career {
+        position: relative;
+        left: 5px;
+        font-size: 26px;
+    }
+
+    .surname {
+        font-size: 40px;
+        /* padding-left: 15px; */
+    }
+
+    .mypic {
+        width: 28%;
+        margin-left: 110px;
+    }
+
+    #myself {
+        /* position: relative;
+        top: 1px; */
+        /* left: -60px; */
+        overflow: hidden;
+    }
+
+    /* About Me */
+    #About-Me {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 150px;
+        padding: 5px 8px;
+    }
+
+    #About-Me img {
+        display: none;
+    }
+
+    #About-Me div {
+        width: 100%;
+    }
+
+    #About-Me h1 {
+        text-align: center;
+    }
+
+    #About-Me div p {
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: 3px underline var(--primary-color);
+    }
+
+    #About-Me div span {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.6;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    /* Services */
+    #services {
+        overflow: hidden;
+        width: 100%;
+        margin: 50px 0 150px 0;
+    }
+
+    #my-works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frontend,
+    .backend,
+    .fullstack {
+        width: 75%;
+        margin: 20px 0 0 0;
+    }
+
+    .frontend .works,
+    .backend .works,
+    .fullstack .works {
+        font-size: 20px;
+    }
+
+    .backend button,
+    .fullstack button {
+        position: relative;
+        top: -7px;
+
+    }
+
+    /* skills */
+    #my-skills {
+        overflow: hidden;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .skills {
+        margin: 50px 0 0 30px;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .percentage span[title="create"] {
+        position: relative;
+        top: -5px;
+        left: 250px;
+        font-size: 18px;
+    }
+
+    .percentage span[title="comm"] {
+        position: relative;
+        top: -5px;
+        left: -5px;
+        font-size: 18px;
+    }
+
+    .percentage span[title="team"] {
+        position: relative;
+        top: -7px;
+        left: 145px;
+        overflow: hidden;
+    }
+
+    .percentage span[title="solve"] {
+        position: relative;
+        top: -5px;
+        left: 95px;
+    }
+
+    /* projects */
+    #projects {
+        overflow: hidden;
+    }
+
+    .projects {
+        align-items: center;
+    }
+
+    .projects .row-one,
+    .row-two {
+        flex-wrap: wrap;
+    }
+
+    .projects .rows-one img,
+    .row-two img {
+        width: 400px;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    .projects a div {
+        width: 400px;
+        height: 250px;
+        top: 9px;
+    }
+
+    .contact-me {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,800 @@
+:root {
+    --primary-color: #00FFFF;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #010108;
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+#header {
+    margin-left: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    animation: SlideInLeft 1s ease-in 1;
+    transition: SlideInLeft 0.s ease-in;
+}
+
+ul {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 0 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.Portfolio {
+    color: var(--primary-color);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* my area */
+#Myself {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 150px 0;
+}
+
+#container {
+    width: 50%;
+    position: relative;
+    left: 100px;
+    animation: Media 1.5s ease-in 1 forwards;
+}
+
+.mypic {
+    width: 40%;
+    margin-left: 300px;
+    animation: SlideInRight 1.5s linear 1;
+    transition: SlideInRight 0.s ease-in;
+}
+
+#myself {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#my-name {
+    font-size: 50px;
+}
+
+.surname {
+    font-size: 50px;
+    padding-left: 15px;
+}
+
+.career {
+    font-size: 35px;
+}
+
+#social-icons {
+    margin: 10px 0 0 0;
+    word-spacing: 20px;
+}
+
+#social-icons a {
+    text-decoration: none;
+}
+
+/* About Me */
+
+#About-Me {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.about-me {
+    width: 130px;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #28282b;
+    margin: 10px 0 0 0;
+    box-shadow: 2px 2px 5px rgb(119, 216, 216);
+}
+
+.about-me:hover {
+    background-color: cyan;
+    color: var(--secondary-color);
+}
+
+.about-me a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#About-Me img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+#About-Me div {
+    width: 70%;
+}
+
+#About-Me div h1 {
+    font-size: 40px;
+    word-spacing: 5px;
+}
+
+#About-Me div h1 span {
+    font-size: 40px;
+    word-spacing: 5px;
+    color: var(--primary-color);
+}
+
+#About-Me div p {
+    margin: 20px 0 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#About-Me div span {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* End of About ME */
+
+/* Begining of my SERVICES */
+
+#services {
+    width: 100%;
+    margin: 50px 0 150px 0;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 55px;
+    word-spacing: 5px;
+}
+
+#services h2 span {
+    font-size: 55px;
+    word-spacing: 5px;
+    color: var(--primary-color);
+}
+
+#my-works {
+    width: 100%;
+    height: 100%;
+    margin: 50px 0 0 -20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FrontEnd */
+
+.frontend {
+    margin-left: 30px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    height: 320px;
+    width: 320px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    /* Light cyan shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frontend:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+    /* Brighter cyan on hover */
+}
+
+.frontend span img {
+    margin-left: 10px;
+}
+
+.frontend .subject {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+b {
+    color: var(--primary-color);
+}
+
+.frontend .works {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.frontend button {
+    position: relative;
+    top: -10px;
+    background-color: rgb(75, 208, 208);
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+.frontend a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* end of FrontEnd Style*/
+
+/* Beginning of BackEnd Style */
+
+
+.backend {
+    margin-left: 30px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    height: 320px;
+    width: 320px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    /* Light cyan shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backend:hover {
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+    /* Brighter cyan on hover */
+}
+
+
+.backend .subject {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+b {
+    color: var(--primary-color);
+}
+
+.backend .works {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.backend span img {
+    margin-left: 10px;
+}
+
+.backend button {
+    position: relative;
+    top: -15px;
+    background-color: rgb(75, 208, 208);
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+.backend a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* end of backend */
+
+/* start of fullstack Style */
+
+.fullstack {
+    margin-left: 30px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    height: 320px;
+    width: 320px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    /* Light cyan shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fullstack:hover {
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+    /* Brighter cyan on hover */
+}
+
+.fullstack span img {
+    margin-left: 5px;
+}
+
+.fullstack .subject {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+b {
+    color: var(--primary-color);
+}
+
+.fullstack .works {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.fullstack button {
+    position: relative;
+    top: -15px;
+    background-color: rgb(75, 208, 208);
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+.fullstack a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* My skills */
+
+#my-skills {
+    margin-top: 50px;
+}
+
+#my-skills h2 {
+    text-align: center;
+    font-size: 55px;
+    word-spacing: 5px;
+}
+
+#my-skills h2 span {
+    font-size: 55px;
+    word-spacing: 5px;
+    color: var(--primary-color);
+}
+
+.skills {
+    margin: 50px 0 0 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#my-skills .percent {
+    text-align: center;
+    font-size: 11px;
+    width: 25px;
+    padding: 1px;
+    background-color: rgb(3, 1, 1);
+    border-radius: 2px;
+    position: relative;
+    top: -3px;
+    left: 265px;
+}
+
+#my-skills .two {
+    text-align: center;
+    font-size: 11px;
+    width: 25px;
+    padding: 1px;
+    background-color: rgb(3, 1, 1);
+    border-radius: 2px;
+    position: relative;
+    top: -3px;
+    left: 190px;
+}
+
+#my-skills .three {
+    text-align: center;
+    font-size: 11px;
+    width: 25px;
+    padding: 1px;
+    background-color: rgb(3, 1, 1);
+    border-radius: 2px;
+    position: relative;
+    top: -3px;
+    left: 110px;
+}
+
+#my-skills .four {
+    text-align: center;
+    font-size: 11px;
+    width: 25px;
+    padding: 1px;
+    background-color: rgb(3, 1, 1);
+    border-radius: 2px;
+    position: relative;
+    top: -3px;
+    left: 245px;
+}
+
+#my-skills .five {
+    text-align: center;
+    font-size: 11px;
+    width: 25px;
+    padding: 1px;
+    background-color: rgb(3, 1, 1);
+    border-radius: 2px;
+    position: relative;
+    top: -3px;
+    left: 218px;
+}
+
+#my-skills .tools img {
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+}
+
+#my-skills .tools p {
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+}
+
+#my-skills .range {
+    width: 300px;
+    height: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#my-skills .range div {
+    background-color: rgb(13, 192, 192);
+    width: 280px;
+    height: 4px;
+}
+
+#my-skills .range #css {
+    background-color: rgb(13, 192, 192);
+    width: 200px;
+    height: 4px;
+}
+
+#my-skills .range #js {
+    background-color: rgb(13, 192, 192);
+    width: 125px;
+    height: 4px;
+}
+
+#my-skills .range #react {
+    background-color: rgb(13, 192, 192);
+    width: 260px;
+    height: 4px;
+}
+
+#my-skills .range #php {
+    background-color: rgb(13, 192, 192);
+    width: 230px;
+    height: 4px;
+}
+
+.percentage span[title="create"] {
+    position: relative;
+    top: 15px;
+    left: -270px;
+    font-size: 18px;
+}
+
+.percentage span[title="comm"] {
+    position: relative;
+    top: 15px;
+    left: -200px;
+    font-size: 18px;
+}
+
+.percentage span[title="team"] {
+    position: relative;
+    top: 5px;
+    left: -230px;
+}
+
+.percentage span[title="solve"] {
+    position: relative;
+    top: 5px;
+    left: -280px;
+}
+
+
+.circle2 {
+    margin-top: 90px;
+}
+
+/* end of skills */
+
+/* projects */
+#projects {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 55px;
+    word-spacing: 5px;
+}
+
+#projects h2 span {
+    font-size: 55px;
+    word-spacing: 5px;
+    color: var(--primary-color);
+}
+
+.projects {
+    width: 100%;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+
+.projects .rows-one {
+    margin: 30px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.projects a div {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(231, 144, 144, 0.291);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1px;
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+}
+
+.projects a:hover div {
+    visibility: visible;
+    transition: 5s;
+}
+
+.projects .row-two {
+    margin: 30px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.projects .rows-one img,
+.row-two img {
+    width: 400px;
+    height: 200px;
+}
+
+/* end of my projects */
+
+/* Contact Me */
+.contact-me {
+    width: 100%;
+    margin: 150px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-me h2 {
+    font-size: 55px;
+    word-spacing: 5px;
+    margin-left: 40px;
+}
+
+.contact-me h2 span {
+    font-size: 55px;
+    word-spacing: 5px;
+    color: var(--primary-color);
+}
+
+
+#info-contact {
+    width: 47%;
+    margin-left: 20px;
+}
+
+#info-contact p {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#info-contact .regards {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 2;
+
+}
+
+#info-contact i {
+    text-decoration: 3px underline var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#info-contact .mail {
+    position: relative;
+    top: 5px;
+}
+
+#info-contact a {
+    text-decoration: 2px underline var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    position: relative;
+    top: -15px;
+}
+
+.call {
+    margin-top: 10px;
+}
+
+.social {
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 30px;
+
+}
+
+.social a img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
+.contact-me form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-me form input {
+    background-color: #ffffff20;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+}
+
+.contact-me form input:focus {
+    outline: 1px solid cyan;
+}
+
+.contact-me form input[id="name"] {
+    padding: 10px 0 15px 20px;
+}
+
+.contact-me form input[id="email"] {
+    background-color: #ffffff20;
+    padding: 10px 0 15px 20px;
+}
+
+.contact-me form input[id="info"] {
+    padding: 10px 0 25px 20px;
+}
+
+.contact-me form input[id="message"] {
+    padding: 10px 0 160px 20px;
+}
+
+.contact-me form button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.contact-me form button a {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #010108cd;
+    color: #fff;
+    filter: contrast(50%);
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+}

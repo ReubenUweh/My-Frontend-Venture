@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Design</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        }
+
+        #container{
+            background-color: #bbb5c7;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .position{
+            position: absolute;
+        }
+
+        #container #pink{
+            background-color: violet;
+            width: 220px;
+            height: 600px;
+            transform: rotate(75deg);
+            margin: 70px 0 0 -20px;
+        }
+
+         #container #greyish{ 
+            background-color: #6a91a8;
+            width: 190px;
+            height: 500px;
+            transform: rotate(75deg);
+            margin: 220px 0 0 125px;
+        } 
+
+        #container #yellow{
+            background-color: #FFC50E;
+            width: 330px;
+            height: 600px;
+            margin: -280px 0 0 850px;
+            transform: rotate(55deg);
+        }
+
+        #container .phones{
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+
+        }
+
+        #container .phone{
+            width: 300px;
+            height: 560px;
+            background-color: #9599B3;
+            border: 5px solid black;
+            border-radius: 25px;
+            position: relative;
+            margin: 40px 0 0 187px;
+            overflow: hidden;
+        }
+
+        #container .phone:nth-child(2){
+            background-color: #241332;
+            position: absolute;
+            top: -2px;
+            left: 435px;
+            bottom: 0;
+        }
+
+        #container #updates{
+            background-color: white;
+            height: 110px;
+            width: 290px;
+            border-radius: 0 0 0 60px;
+            border-bottom: 1px solid #9f9f9f;
+            position: absolute;
+            z-index: 2;
+        }
+
+        #container #updates1{
+            background-color: #241332;
+            height: 110px;
+            width: 290px;
+            border-radius: 0 0 0 60px;
+            border-bottom: 1px solid #351350;
+            position: absolute;
+            z-index: 2;
+            top: -1px;
+        }
+
+        #container #about-user{
+            background-color: white;
+            height: 290px;
+            width: 290px;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #container #about-user2{
+            background-color: white;
+            height: 305px;
+            width: 290px;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #container #slides{
+            background-color: #241332;
+            height: 440px;
+            width: 290px;
+            border-radius: 0 0 0 60px;
+            position: relative;
+        }
+
+         #explore{
+            background-image: url(ocean.jpg);
+            background-size: contain;
+            height: 350px;
+            width: 290px;
+            position: absolute;
+            top: 110px;
+            border-radius: 0 0 0 60px;
+            z-index: -30px;
+        } 
+
+        #time{
+            color: #111111;
+            top: 10px;
+            margin: 10px 150px 0 20px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        #time1{
+            color: #ffffff;
+            top: 10px;
+            margin: 10px 150px 0 20px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        #header{
+            color: #ffffff;
+        }
+        
+        #updates-icon{
+            margin: 10px 0 0 15px;
+            word-spacing: 215px;
+        }
+
+        #update-name{
+            position: relative;
+            margin: 0 0 0 70px;
+            bottom: 5px;
+        }
+
+        #update-name1{
+            position: relative;
+            margin: 0 0 0 70px;
+            bottom: 5px;           
+        }
+
+        .about{
+            position: absolute;
+            top: 100px;
+        }
+
+        #profile{
+            height: 37px;
+            width: 37px;
+            background-color: rgb(240, 48, 48);
+            border-radius: 100%;
+            margin: 20px 0 0 20px;
+        }
+
+        .user{
+            position: relative;
+            top: -40px;
+            bottom: 20px;
+            left: 77px;
+        }
+
+        .user-name{
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .date{
+            font-size: 10px;
+            color: rgb(65, 61, 61);
+            font-weight: 500;
+        }
+
+        #user-bio{
+            position: relative;
+            bottom: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            left: 25px;
+            color: rgb(65, 61, 61);
+        }
+
+        #reaction{
+            position: relative;
+            left: 160px;
+            bottom: 20px;
+        }
+
+        .fa-commentt{
+            color: grey;
+        }
+        .number{
+            font-size: 12px;
+            font-weight: 500;
+            color: rgb(65, 61, 61);
+        }
+
+        .space{
+            margin-left: 15px;
+        }
+
+        #img-slide{
+            position: relative;
+            background-color: violet;
+            height: 120px;
+            width: 90px;
+            top: 300px;
+            left: 40px;
+            border-radius: 20px;
+        }
+
+        .img1{
+            position: relative;
+            bottom: 15px;
+            right: 93px;
+        }
+
+        #img-content{
+            position: absolute;
+            bottom: 55px;
+            left: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        
+        #img-content1{
+            position: absolute;
+            bottom: 43px;
+            left: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        
+        #img-content2{
+            position: absolute;
+            bottom: 32px;
+            left: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        #img-slide1{
+            position: relative;
+            background-color: #6a91a8;
+            height: 120px;
+            width: 90px;
+            top: 183px;
+            left: 150px;
+            border-radius: 20px;
+        }
+
+        .img-content3{
+            position: relative;
+            left: 10px;
+            bottom: 75px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .img-content4{
+            position: absolute;
+            left: 10px;
+            bottom: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .img-content5{
+            position: absolute;
+            left: 10px;
+            bottom: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        #img-slide3{
+            position: relative;
+            background-image: linear-gradient(rgb(0,46,87),rgb(34,78,0g5t));
+            height: 120px;
+            width: 90px;
+            top: 63px;
+            left: 270px;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        #profile1{
+            height: 37px;
+            width: 37px;
+            background-color: rgb(129, 129, 240);
+            border-radius: 100%;
+            margin: 90px 0 0 20px;
+        }
+
+        .user1{
+            position: relative;
+            top: -38px;
+            left: 75px;
+        }
+
+        #user-name1{
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 800;        
+        }
+
+        #date1{
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        #add{
+            position: relative;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            top: -100px;
+            left: 250px;
+            border-radius: 100%;
+            text-align: center;
+        }
+
+        #plus{
+            padding-top: 5px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .profile2{
+            height: 35px;
+            width: 35px;
+            background-color: palevioletred;
+            border-radius: 100%;
+            margin: 225px 0 0 20px;
+        }
+
+        .user2{
+            position: absolute;
+            top: 330px;
+            left: 75px;
+        }
+
+        .user2 span{
+            font-size: 13px;
+            font-weight: 500;
+            color: white
+        }
+
+        .user2 .date{
+            font-size: 10px;
+            color: #9f9f9f;
+        }
+
+        #reaction1{
+            position: relative;
+            color: #fff;
+            top: 420px;
+            left: 170px;
+        }
+
+        #reaction1 span{
+            color: #fff;
+        }
+
+        .user4{
+            position: absolute;
+            top: 100px;
+            left: 75px;
+        }
+
+        
+        .user4{
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        #date1{
+            color: #9f9f9f;
+        }
+        .profile3{
+            height: 37px;
+            width: 37px;
+            background-color: rgb(129, 129, 240);
+            border-radius: 100%;
+            margin: 100px 0 0 20px;
+        }
+
+        #user-bio1{
+            margin: 7px 0 0 20px;
+            font-size: 13px;
+            color: #4e4949;
+            font-weight: 500;
+        }
+
+        #jar{
+            background-color: #FFC50E;
+            height: 100px;
+            width: 250px;
+            margin: 15px 0 0 20px;
+            border-radius: 10px 50px 10px 50px;
+        }
+
+        .jar{
+            margin: 15px 0 0 90px;
+        }
+
+        .user5{
+            position: absolute;
+            top: 470px;
+            left: 75px;
+        }
+
+        #user-name4{
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        #user-bio3{
+            position: relative;
+            font-size: 12px;
+            font-weight: 500;
+            top: 5px;
+            left: 30px;
+            color: rgb(65, 61, 61);
+        }
+
+        .profile4{
+            height: 37px;
+            width: 37px;
+            background-color: rgb(129, 129, 240);
+            border-radius: 100%;
+            margin: 380px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div class="position" id="pink"></div>
+        <div class="position" id="greyish"></div>
+        <div class="position" id="yellow"></div>
+        <div class="phones">
+            <div class="phone one">
+                <div  id="updates">
+                    <p id="time">9:48</p>
+                    <i class="fa fa-signal"></i>
+                    <i class="fa fa-wifi"></i>
+                    <i class="fa fa-battery-full"></i>
+                    <div id="updates-icon">
+                    <i class="fa fa-arrow-left" style="color: rgb(179, 174, 174);"></i>
+                    <i class="fa fa-search" style="color: rgb(179, 174, 174);"></i>
+                    </div>
+                    <div id="update-name">
+                        <h2>Updates</h2>
+                    </div>
+                </div>
+                <div id="about-user">  
+                    <div class="about">
+                        <div id="profile">&nbsp;</div>
+                    <div class="user">
+                        <span class="user-name">Maria Carter</span><br>
+                        <span class="date">Nov 8</span>
+                    </div>
+                    <div id="user-bio">
+                        When I was 5 years old my mother always<br>told me happiness 
+                        was the key to life.When<br>I went to school they asked me
+                        what I<br> wanted to be when I grew up.
+                    </div>
+                    <div id="reaction">
+                        <span class="number">256</span>
+                        <i class="far fa-comment-alt" aria-hidden="true" co></i>
+                        <span class="number space">428</span>
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                    </div>
+                    </div>
+                </div>
+                <div id="slides">
+                    <div id="img-slide">
+                        <img src="ballet.png" alt="" width="255px" class="img1">
+                        <span id="img-content">Dance</span>
+                        <span id="img-content1">Session</span>
+                        <span id="img-content2">4.6</span>
+                    </div>
+                    <div id="img-slide1">
+                        <img src="suit.png" alt="" width="80px">
+                        <span class="img-content3">Business</span><br>
+                        <span class="img-content4">Ideas</span>
+                        <span class="img-content5">3.8</span>
+                    </div>
+                    <div id="img-slide3">
+                        <img src="itadori.webp" alt="" width="1px"></div>
+                    <div>
+                        <div id="profile1">&nbsp;</div>
+                        <div class="user1">
+                            <span id="user-name1">Abdullah Hadley</span><br>
+                            <span id="date1">Nov 8</span>
+                        </div>
+                        <div id="user-bio">
+                            When I was 5 years old my mother always<br>told me happiness 
+                            was the key to life.When<br>I went to school they asked me
+                            what I<br> wanted to be when I grew up.
+                        </div>
+                        <div id="add">
+                            <span id="plus">+</span>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="phone">
+                    <div id="explore">
+                        <div class="profile2">&nbsp;</div>
+                    </div>
+                    <div class="user2">
+                        <span>Marcus Brownlee</span><br>
+                        <span class="date">9 Nov</span>
+                    </div>
+                    <div id="reaction1">
+                        <span class="number">256</span>
+                        <i class="far fa-comment-alt" aria-hidden="true"></i>
+                        <span class="number space">428</span>
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div id="about-user2">  
+                        <div id="explore1">
+                            <div class="profile3">&nbsp;</div>
+                        </div>
+                        <div class="user4">
+                            <span id="user-name3">Abdullah Hadley</span><br>
+                            <span id="date1">Nov 8</span>
+                        </div>
+                        <div id="user-bio1">
+                            <p>Back in the days.Still love to use this today!</p>
+                        </div>
+                        <div id="jar">
+                            <img src="jar.png" alt="" width="75px" class="jar">
+                        </div>
+                    </div>
+                    <div id="updates1">
+                        <p id="time1">9:48</p>
+                        <i class="fa fa-signal" style="color: white;"></i>
+                        <i class="fa fa-wifi" style="color: white;"></i>
+                        <i class="fa fa-battery-full" style="color: white;"></i>
+                        <div id="updates-icon">
+                        <i class="fa fa-arrow-left" style="color: white;"></i>
+                        <i class="fa fa-filter" style="color: white;"></i>
+                        </div>
+                        <div id="update-name1">
+                            <h2 id="header">Updates</h2>
+                        </div>
+                        <div>
+                            <div id="explore2">
+                                <div class="profile4">&nbsp;</div>
+                            </div>
+                            <div class="user5">
+                                <span id="user-name4">Jack Snow</span><br>
+                                <span id="date1">Nov 8</span>
+                            </div>
+                            <div id="user-bio3">
+                                When I was 5 years old my mother always<br>told me happiness 
+                                was the key to life.When<br>I went to school they asked me
+                                what I<br> wanted to be when I grew up.
+                            </div>
+                            <div id="add">
+                                <span id="plus">+</span>
+                            </div>
+                        </div>
+                 </div>
+                
+            </div>
+
+    </main>
+</body>
+</html>

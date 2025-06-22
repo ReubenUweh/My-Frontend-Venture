@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 850px;
+            height: 550px;
+            background-image: url(car-maze.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            margin: 0 auto;
+            border: 20px solid rgb(13, 132, 35);
+        }
+
+        img {
+            width: 45px;
+            transform: rotate(180deg);
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img src="car.gif" alt="" id="car">
+    </div>
+    <script>
+        const car = document.getElementById("car");
+        //movement value
+        let topMovement = 190;
+        let leftMovement = 550;
+        let rotateMovement = 180;
+
+        //movement function
+        setTop(topMovement);
+        setLeft(leftMovement);
+        setRotate(rotateMovement);
+
+        //right movement
+        function setTop(topMovement) {
+            car.style.top = `${topMovement}px`;
+        }
+        //left movement
+        function setLeft(leftMovement) {
+            car.style.left = `${leftMovement}px`;
+        }
+        //rotate movement
+        function setRotate(rotateMovement) {
+            car.style.transform = `rotate(${rotateMovement}deg)`;
+        }
+
+        document.addEventListener("keydown", function (event) {
+            const key = event.keyCode;
+            if (key == 40) {
+                topMovement = topMovement + 10;
+                setTop(topMovement);
+                rotateMovement = 180;
+                setRotate(rotateMovement);
+            }
+            if (key == 39) {
+                leftMovement = leftMovement + 10;
+                rotateMovement = 90;
+                setLeft(leftMovement);
+                setRotate(rotateMovement)
+            }
+            if (key == 38) {
+                topMovement = topMovement - 10;
+                setTop(topMovement);
+                rotateMovement = 0;
+                setRotate(rotateMovement)
+            }
+            if (key == 37) {
+                leftMovement = leftMovement - 10;
+                setLeft(leftMovement);
+                rotateMovement = -90;
+                setRotate(rotateMovement)
+            }
+            if (leftMovement > 885) {
+                alert("Try Again");
+            }
+            if (leftMovement < 545) {
+                alert("Warinng");
+            }
+            if (topMovement > 450) {
+                alert("Try Again");
+            }
+            if (topMovement < 115) {
+                alert("Try Again");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

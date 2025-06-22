@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #playground {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="playground"></div>
+    <script>
+        const playground = document.getElementById("playground")
+        let width = 100;
+        let height = 100;
+        setHeight(height);
+        setWidth(width);
+        document.addEventListener("keyup", function (event) {
+            const key = event.keyCode;
+            if (key == 37) {
+                width = width - 10;
+                setWidth(width)
+            }
+            if (key == 39) {
+                width = width + 10;
+                setWidth(width);
+            }
+            if (key == 38) {
+                height = height - 10;
+                setHeight(height);
+            }
+            if (key == 40) {
+                height = height + 10;
+                setHeight(height);
+            }
+        });
+        function setWidth(width) {
+            playground.style.width = `${width}px`;
+        }
+        function setHeight(height) {
+            playground.style.height = `${height}px`;
+        }
+    </script>
+</body>
+
+</html>

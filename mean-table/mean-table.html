@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean Table</title>
+    <link rel="stylesheet" href="/bootclass/bootstrap/css/bootstrap.css">
+    <style>
+        body {
+            background-color: rgb(192, 228, 216);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 50%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #d3e9c3;
+            /* similar green background */
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 7px;
+        }
+
+        th {
+            background-color: #84b46f;
+        }
+
+        input {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mt-3 fw-bold">Calculating Mean Score</h2>
+                <div class="offset-1 offset-md-2 mt-3">
+                    <p><strong class="fs-5">Example 6:</strong>
+                        <span class="fw-semibold">The scores in an oral test in
+                            mathematics for a class of 35 students
+                            are in Table below.Find the mean deviation of the scores.
+                        </span>
+                    <table>
+                        <tr>
+                            <th>Score</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Frequency</th>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>14</td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+                <div class="mt-2 offset-md-1">
+                    <h4 class="fw-bold">Preparing Table for solution</h5>
+                        <div id="meanTable">
+                            <table id="table">
+                                <!-- <tbody> -->
+                                <tr>
+                                    <th>x</th>
+                                    <th>f</th>
+                                    <th>fx</th>
+                                    <th>x - m = d</th>
+                                    <th>[d]</th>
+                                    <th>f[d]</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="inputX"></td>
+                                    <td><input type="text" class="inputF"></td>
+                                    <td class="fx"></td>
+                                    <td class="d"></td>
+                                    <td class="d2"></td>
+                                    <td class="fd"></td>
+                                </tr>
+                                  <tr>
+                                    <td><input type="text" class="inputX"></td>
+                                    <td><input type="text" class="inputF"></td>
+                                    <td class="fx"></td>
+                                    <td class="d"></td>
+                                    <td class="d2"></td>
+                                    <td class="fd"></td>
+                                </tr>
+                                  <tr>
+                                    <td><input type="text" class="inputX"></td>
+                                    <td><input type="text" class="inputF"></td>
+                                    <td class="fx"></td>
+                                    <td class="d"></td>
+                                    <td class="d2"></td>
+                                    <td class="fd"></td>
+                                </tr>
+                                  <tr>
+                                    <td><input type="text" class="inputX"></td>
+                                    <td><input type="text" class="inputF"></td>
+                                    <td class="fx"></td>
+                                    <td class="d"></td>
+                                    <td class="d2"></td>
+                                    <td class="fd"></td>
+                                </tr>
+                                  <tr>
+                                    <td><input type="text" class="inputX"></td>
+                                    <td><input type="text" class="inputF"></td>
+                                    <td class="fx"></td>
+                                    <td class="d"></td>
+                                    <td class="d2"></td>
+                                    <td class="fd"></td>
+                                </tr>
+                                <tr class="print">
+                                    <td class="xSum"></td>
+                                    <td class="fSum"></td>
+                                    <td class="fxsum"></td>
+                                    <td class=""></td>
+                                    <td class=""></td>
+                                    <td class="fdSum"></td>
+                                </tr>
+                                <!-- </tbody> -->
+                            </table>
+                        </div>
+                        <button id="addRow" onclick="addRows()" class="btn btn-success">AddRow</button>
+                        <p class="p-3">Your mean Is: <span id="meanValue"></span></p>
+                        <p class="p-3">Your mean Deviation is: <span id="meanDeviation"></span></p>
+                </div>
+            </div>
+            <script src="mean-table.js"></script>
+</body>
+
+</html>

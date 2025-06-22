@@ -1,0 +1,277 @@
+:root{
+    --primary-color: #A0CE4E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.flex{
+    display: flex;
+}
+button{
+    background:none;
+    border: none;
+}
+.main{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+}
+.top-section{
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29292A;
+    color: white;
+    height: 50px;
+}
+.top-section .call-us{
+    font-size: 13px;
+}
+.top-section .socials i{
+    padding: 10px;
+    background-color: pink;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+.top-section .socials i:nth-child(1){background-color: #3B5998;}
+.top-section .socials i:nth-child(2){background-color: #55ACEE;}
+.top-section .socials i:nth-child(3){background-color: #3F729B;}
+.top-section .socials i:nth-child(4){background-color: black;}
+                /* nav section | section 2 */
+#nav{
+    height: 90px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#nav ul{
+    list-style-type: none;
+}
+#nav ul .menu1{
+    margin: 27px;
+    padding-top: 20px;
+    border-top: 3px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 15px;
+}
+#nav .logo{
+    width: 150px;
+}
+#nav ul .menu1:hover{
+    border-top: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+#nav ul .menu-hov:hover .sub-menu,
+#nav ul .menu-hov:hover .search-menu{           /*for both sub menu and search menu*/
+    visibility: visible;
+}
+#nav ul .menu1 i{
+    display: none;
+}
+.sub-menu{
+    position: absolute;
+    width: 170px;
+    background-color: #F2EFEF;
+    border-top: 3px solid var(--primary-color);
+    margin-top: 25px;
+    visibility: hidden;
+}
+.sub-menu li{
+    padding: 10px 0 10px 10px;
+    color: black;
+}
+.search-menu{
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    background-color: #F2EFEF;
+    margin: 25px 0 0 -250px;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.search-menu input{
+    height: 40px;
+    outline: none;
+    border-radius: 0;
+    border: none;
+}
+.search-menu i{
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+                /* header section | section 3 */
+.header{
+    background: #ffffff url(../images/about_us.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+.header .header-text{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+.header p{
+    color: white;
+}
+                /* section 4 */
+.section-4{
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-top: 40px;
+    flex-wrap: wrap ;
+}
+.section-4 .left{
+    width: 50%
+}
+.section-4 .right{
+    width: 50%;
+}
+.section-4 .left h1{
+    padding: 20px 0;
+    font-size: 50px;
+}
+.section-4 .right p{
+    padding: 10px 0;
+    line-height: 2;
+}
+
+.title-2{
+    text-align: center;
+    font-weight: 10;
+}
+.subtitle{
+    padding: 30px 40px;
+}
+.function{
+    justify-content: center;
+}
+.function ul{
+    width: 80%;
+    line-height: 2;
+    list-style-type: square;
+}
+                    /* section 5 */
+.section-5{
+    border: 1px solid black;
+    width: 88%;
+    margin: 0 auto;
+    min-height: 190px;
+}
+.section-5 .top{
+    justify-content: center;
+    align-items: center;
+}
+.top div{
+    width: 50%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.top div i{
+    padding-right: 10px;
+}
+.top .vision{
+    border-top: 4px solid var(--primary-color);
+}
+.top .mission{
+    background-color: #F2EFEF;
+}
+.top .mission:hover{
+    border-top: 5px solid var(--primary-color);
+    background: none;
+}
+.section-5 .content{
+    justify-content: center;
+    padding-top: 40px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+                            /* section 6 */
+.values{
+    justify-content: center;
+    margin: 70px 0;
+    text-align: center;
+}
+.values h1{
+    font-size: 70px;
+    font-weight: 1;
+}
+            /* section 7 */
+.value-card{
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.value-card .card{
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid #699917;
+    box-shadow: 0 5px 10px #699917;
+}
+.value-card .card i{
+    font-size: 100px;
+    color: var(--primary-color);
+}
+.value-card .card p{
+    font-size: 20px;
+}
+/* footer section */
+.footer{
+    height: 400px;
+    background-color: #D8D8D8;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 10px solid var(--primary-color);
+}
+.footer .right{
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+.footer .right img{
+    width: 150px;
+    padding: 20px 0 20px 0;
+}
+.footer .left{
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(#018101, #5DC75D 75px, #90EE90 70px 100px);
+    margin-right: 200px;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    box-shadow: 10px 10px 0 #C5C7C9;
+}
+.footer-bottom{
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    background-color: #235E27;
+    color: white;
+    font-size: 13px;
+}
+.footer-bottom i{
+    padding: 0 5px;
+    color: gray;
+}

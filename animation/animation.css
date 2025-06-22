@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#load{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    height: 100vh;
+    width: 100%;
+    display: none;
+    animation: disappear 3s;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loader{
+    animation: loading 1s infinite linear;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes disappear{
+    from{
+        display: block;
+    }
+    to{
+        display: none;
+    }
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

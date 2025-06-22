@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 850px;
+    height: 550px;
+    background-image: url(maze.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+main img{
+    position: absolute;
+    width: 28px;
+    animation: sonic 30s 1 linear;
+}
+
+@keyframes sonic{
+    0%{
+        top: 130px;
+    }
+    10%{
+        left: 554px;
+    }
+    15%{
+        top: 296px;
+    }
+    20%{
+        left: 553px;
+    }
+    25%{
+        left: 676px;
+    }
+    30%{
+       left: 678px;
+    }
+    33%{
+        top: 310px;
+    }
+    35%{
+        top: 398px;
+    }
+    38%{
+        left: 688px;
+    }
+    40%{
+        left: 742px;
+    }
+    43%{
+        top: 382px;
+    }
+    45%{
+        top: 258px;
+    }
+    50%{
+        top: 230px;
+    }
+    55%{
+        top: 210px;
+    }
+    58%{
+        left: 738px;
+    }
+    60%{
+        left: 652px;
+    }
+    63%{
+        top: 210px;
+    }
+    65%{
+        top: 180px;
+    }
+    70%{
+        top: 147px;
+    }
+    72%{
+        left: 655px;
+    }
+    80%{
+        left: 680px;
+    }
+    85%{
+        left: 777px;
+    }
+    88%{
+        top: 150px;
+    }
+    90%{
+        top: 250px;
+    }
+    94%{
+        top: 304px;
+    }
+    96%{
+        left: 777px;
+    }
+    97%{
+        left: 830px;
+    }
+    100%{
+        left: 840px;
+    }
+}
+
+
+.start{
+    position: absolute;
+    top: 340px;
+    left: 350px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(6, 95, 6);
+}
+.end{
+    position: absolute;
+    top: 160px;
+    left: 860px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(6, 95, 6);
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Standing Fan</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .fan-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fan {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #90caf9;
+            border: 8px solid #1565c0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .blades {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: center center;
+            animation: spin 0s linear infinite;
+        }
+
+        .blade {
+            position: absolute;
+            width: 170px;
+            height: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            top: 45%;
+            left: 50%;
+            transform-origin: left center;
+        }
+
+        .blade:nth-child(1) {
+            transform: rotate(0deg) translateX(-50%);
+        }
+
+        .blade:nth-child(2) {
+            transform: rotate(120deg) translateX(-50%);
+        }
+
+        .blade:nth-child(3) {
+            transform: rotate(240deg) translateX(-50%);
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .stand {
+            width: 20px;
+            height: 150px;
+            background: #1565c0;
+            margin-top: -10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background-color: #1565c0;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fan-container">
+        <div class="fan">
+            <div class="blades" id="blades">
+                <div class="blade" id="bladeOne"></div>
+                <div class="blade" id="bladeTwo"></div>
+                <div class="blade" id="bladeThree"></div>
+            </div>
+        </div>
+        <div class="stand"></div>
+        <div class="buttons">
+            <button id="speedOne">Speed 1</button>
+            <button id="speedTwo">Speed 2</button>
+            <button id="speedThree">Speed 3</button>
+        </div>
+    </div>
+    <script>
+        // getting values
+        const blades = document.getElementById("blades");
+        const speedOne = document.getElementById("speedOne");
+        const speedTwo = document.getElementById("speedTwo");
+        const speedThree = document.getElementById("speedThree");
+        //movement
+        function setSpeed(level) {
+            let speed = "0s";
+
+            if (level == 1) {
+                speed = "0.9s";
+            }
+             else if(level == 2) {
+                speed = "0.6s";
+            }
+             else if (level == 3){
+                speed = "0.3s";
+            }
+            else{
+                return;
+            }
+            blades.style.animation = `spin ${speed} linear infinite`;
+        }
+        speedOne.addEventListener("click", function(event){
+            setSpeed(1);
+        });
+        speedTwo.addEventListener("click", function(){
+            setSpeed(2);
+        });
+          speedThree.addEventListener("click", function(){
+            setSpeed(3);
+        });
+    </script>
+</body>
+
+</html>

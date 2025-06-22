@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="/bootclass/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="weather-search mt-3">
+                    <input type="search" name="" id="searchInput" placeholder="Search...">
+                    <button class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="weatherInfo">
+            <div class="col-12">
+                <div class="weather p-2 text-white">
+                    <div class="weather-location mt-3">
+                        <div class="location mt-xl-3">
+                            <img src="location.svg" alt="" width="23px">
+                            <h4 class="country-capital fw-bold">New York</h4>
+                        </div>
+                        <h5 class="date fw-bold">Fri,13 Jul</h5>
+                    </div>
+                    <div class="weather-info-conatiner text-white">
+                        <img src="clouds.png" alt="" width="150px" class="weatherSummary">
+                        <div class="weather-info">
+                            <h2 class="temp">27 °C</h2>
+                            <h2 class="condition">Clouds</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="weather-info-conatiner">
+                    <div class="one">
+                        <img src="humidity.png" alt="" width="29px">
+                        <div class="humidity">
+                            <h6>Humidity</h2>
+                                <h6 class="humidity-txt">40%</h2>
+                        </div>
+                    </div>
+                    <div class="wind one">
+                        <img src="wind.png" alt="" width="29px">
+                        <div class="humidity">
+                            <h6>Wind Speed</h2>
+                                <h6 class="wind-txt">3m/s</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="forecast mt-2">
+                    <div class="forecast-info">
+                        <h5>05 Aug</h5>
+                        <img src="thunderstorm-removebg-preview.png" alt="" width="145px">
+                        <h5 class="temp">27 °C</h5>
+
+                    </div>
+                    <div class="forecast-info">
+                        <h5>05 Aug</h5>
+                        <img src="thunderstorm-removebg-preview.png" alt="" width="145px">
+                        <h5 class="temp">27 °C</h5>
+
+                    </div>
+                    <div class="forecast-info">
+                        <h5>05 Aug</h5>
+                        <img src="thunderstorm-removebg-preview.png" alt="" width="145px">
+                        <h5 class="temp">27 °C</h5>
+
+                    </div>
+                    <div class="forecast-info">
+                        <h5>05 Aug</h5>
+                        <img src="thunderstorm-removebg-preview.png" alt="" width="145px">
+                        <h5 class="temp">27 °C</h5>
+
+                    </div>
+                </div>
+            </div>
+            <dic class="col-12">
+                <div class="weather-view">
+                    <div class="info">Everyday Weather App Forecast</div>
+                </div>
+            </dic>
+        </div>
+        <div class="row" id="searchCity">
+            <div class="col-12">
+                <div class="search-city">
+                    <img src="search-city.png" alt="" width="280px">
+                    <div class="search-txt">
+                        <h2>Search location</h5>
+                            <h6>Find weather status and condition, may vary for each city</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="notFound">
+            <div class="col-12">
+                <div class="not-found">
+                    <img src="not-found.png" alt="" width="300px">
+                    <div class="not-found-text">
+                        <h2>404 Not Found</h2>
+                        <h6>The page you're looking for doesn't exist or may have been moved.</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>

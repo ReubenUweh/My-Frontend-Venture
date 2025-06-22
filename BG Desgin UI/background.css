@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(bg-image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  height: 610px;
+  background: rgba(0, 0, 0, 0.268); /* Semi-transparent */
+  backdrop-filter: blur(20px); /* Blur effect */
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+header{
+  position: relative;
+  top: 15px;
+  left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul li{
+  position: relative;
+  left: 55px;
+  color: rgb(178, 174, 174);
+  font-size: 14px;
+  margin-left: 70px;
+  list-style: none;
+}
+
+header li div{
+  width: 7px;
+  height: 7px;
+  position: relative;
+  top: -20px;
+  left: 45px;
+  border-radius: 100%;
+  background-color: blue;
+}
+
+header li #list-notify{
+  left: 70px;
+}
+
+#app{
+  width: 80px;
+  text-align: center;
+  left: 80px;
+  position: relative;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+header .fa-search{
+  color: rgb(215, 211, 211);
+  font-size: 14px;
+  position: relative;
+  top: 3px;
+  left: 58px;
+}
+
+header input{
+  width: 210px;
+  padding: 10px 0 10px 35px;
+  position: relative;
+  top: -8px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.745);
+  color: #fff;
+}
+
+header .fa-bell{
+  position: relative;
+  left: -10px;
+}
+
+header .fa-cloud{
+  position: relative;
+  left: -15px;
+}
+
+header img{
+  position: relative;
+  top: -7px;
+  left: -25px;
+}
+
+/* start of three dot */
+.dot{
+  position: relative;
+  top: 7px;
+  left: 10px;
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dot .red{
+  width: 11px;
+  height: 11px;
+  background-color: rgb(235, 13, 13);
+  border-radius: 100%;
+}
+
+.dot .yellow{
+  width: 11px;
+  height: 11px;
+  background-color: rgb(201, 201, 21);
+  border-radius: 100%;
+}
+
+.dot .green{
+  width: 11px;
+  height: 11px;
+  background-color: rgb(31, 224, 31);
+  border-radius: 100%;
+}
+/* end of three dot */
+
+.header-close{
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin-top: 16px;
+  background-color: rgba(98, 97, 97, 0.296);
+}
+
+/* lefrbar */
+.leftbar{
+  margin: 12px 0 0 30px;
+  height: 85%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftbar .column{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.column i{
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.column .header-names{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(106, 102, 102, 0.959);
+}
+
+.column p{
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.column .names{
+  position: relative;
+  left: -1px;
+}
+/* end of leftbar */
+
+/* top bar  */
+#topbar{
+  position: absolute;
+  top: 60px;
+  left: 280px;
+  display: flex;
+}
+
+#topbar p{
+  margin-right: 100px;
+}
+
+#topbar ul{
+  display: flex;
+}
+
+#topbar ul li{
+  list-style: none;
+  margin-left: 60px;
+  font-size: 14px;
+}
+
+#topbar ul .list-color{
+    color: rgb(178, 174, 174);
+}
+
+#desktop{
+   width: 80px;
+  text-align: center;
+  left: 30px;
+  padding-bottom: 7px;
+  position: relative;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+section{
+  position: absolute;
+  top: 90px;
+  left: 219px;
+  height: 85%;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.175); /* Semi-transparent */
+  backdrop-filter: blur(20px); /* Blur effect */
+  border-radius: 0 0 10px 0;
+}
+
+.adobe{
+  width: 93%;
+  height: 170px;
+  background: linear-gradient(to right top, #DC42E1,#FC3499,#FD5471,#FF785A,#fbd753);
+  margin: 10px 0 0 35px;
+  border-radius: 15px;
+}
+
+.adobe span{
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+.adobe span span{
+  position: relative;
+  top: -8px;
+  left: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.adobe p{
+  position: relative;
+  top: 30px;
+  left: 40px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.adobe button{
+  margin: 0 0 0 45px;
+  position: relative;
+  top: -75px;
+  padding: 7px 20px;
+  background-color: rgb(43, 43, 236);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+.adobe #joggle{
+  position: relative;
+  top: -60px;
+  left: 420px;
+}
+
+.updates{
+  width: 93%;
+  margin: 10px 0 0 35px;
+}
+
+.updates p{
+  font-size: 12px;
+  color: rgba(171, 166, 166, 0.852);
+}
+
+.updates #background{
+  width: 100%;
+  height: 120px;
+  margin-top: 3px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.059);
+  backdrop-filter: blur(20px);
+}
+
+.updates .row{
+  display: flex;
+}
+
+.updates .row span{
+  margin: 8px 0 0 10px;
+}
+
+.updates .row #dot{
+  width: 5px;
+  height: 5px;
+   border-radius: 100%;
+  background-color: lawngreen;
+   margin: 21px 0 0 235px;
+}
+
+.updates .row button{
+  width: 60px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.348);
+  border-radius: 50px;
+   margin: 8px 0 0 310px;
+   color: rgba(255, 255, 255, 0.344);
+   font-size: 11px;
+}
+
+.row .logo-name{
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+}
+
+.row .fa-ellipsis-h{
+  position: relative;
+  top: 13px;
+  left: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+.row-line{
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.139);
+  position: relative;
+}
+
+/* row2 */
+.updates .row2{
+  display: flex;
+}
+
+.updates .row2 span{
+  position: relative;
+  margin: 10px 0 0 10px;
+}
+
+.updates .row2 #dot{
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: blue;
+   margin: 21px 0 0 242px;
+}
+
+.updates .row2 button{
+  width: 120px;
+  height: 25px;
+  background-color: rgb(65, 65, 231);
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  left: 310px;
+  top: 8px;
+   color: white;
+   font-size: 11px;
+}
+
+.row2 .logo-name{
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+}
+
+.row2 .one{
+  position: absolute;
+  top: 55px;
+  left: 360px;
+}
+
+.row2 .fa-ellipsis-h{
+  position: relative;
+  top: 13px;
+  left: 315px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+.row-line{
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.139);
+  position: relative;
+}
+/* end of row 2 */
+/* apps */
+.apps{
+  width: 93%;
+  margin: 10px 0 0 35px;
+}
+
+.apps p{
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: rgba(171, 166, 166, 0.852);
+}
+
+.apps #flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.apps .box{
+  width: 32%;
+  height: 157px;
+  background-color: #ffffff22;
+    backdrop-filter: blur(20px);
+}
+
+.apps img{
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.apps span{
+  position: relative;
+  font-size: 13px;
+  top: -3px;
+  left: 18px;
+}
+
+.apps .text{
+  color: rgba(255, 255, 255, 0.881);
+  position: relative;
+  top: 13px;
+  left: 19px;
+  font-size: 13px;
+}
+
+.apps .box hr{
+  width: 90%;
+  position: relative;
+  top: 25px;
+  left: 13px;
+  border: none;
+  height: 1px;
+  background-color: #ffffff22;
+}
+
+.apps button{
+  width: 60px;
+  height: 25px;
+  background-color: rgb(65, 65, 231);
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  left: 160px;
+  top: 40px;
+   color: white;
+   font-size: 11px;
+}
+
+.apps .fa-ellipsis-h{
+  position: relative;
+  top: 43px;
+  left: 165px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.534);
+}
+/* end of apss */

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+     body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        background-image: linear-gradient(135deg, #0d0d0d, #1a0033, #000033);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+    main{
+        width: 350px;
+        height: 620px;
+        background-color: #fff;
+        margin: 0 auto;
+        z-index: 5;
+        position: relative;
+        top: 3px;
+        border-radius: 20px;
+        border: 5px solid whitesmoke;
+    }
+
+    section{
+        padding: 10px;
+        }
+
+        section span{
+        font-weight: 600;
+        margin-right: 215px;
+        }
+
+        #notifier{
+            margin: 5px 0 0 15px;
+            font-weight: 600;    
+        }
+
+        #notifier i{
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 100%;
+        }
+
+        #notifier span{
+            margin: 0 70px 0 60px;
+        }
+
+        #dave{
+            margin: 5px 0 0 55px;
+        }
+
+        #dave img{
+            border-radius: 20px;
+        }
+
+        #artist{
+            margin: 0 0 0 120px;
+        }
+
+        #artist p{
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        #artist span{
+            font-size: 11px;
+            font-weight: 700;
+            position: relative;
+            top: -5px;
+            left: 15px;
+        }
+
+        #audio{
+            margin: -25px 0 0 30px;
+        }
+
+        .audio-time{
+            margin: -35px 0 0 0;
+            font-size: 11px;
+            font-weight: 700;
+            word-spacing: 200px;
+        }
+
+        .audio-time .time1{
+            margin-left: 35px;
+        }
+
+        #music-icons{
+            margin: 20px 0 0 25px;
+            word-spacing: 40px;
+        }
+
+        #music-icons i{
+            color: white;
+            background-color: #0b0b72;
+            padding: 15px;
+            border-radius: 100%;
+            position: relative;
+            bottom: 5px;
+        }
+
+        footer{
+            width: 310px;
+            height: 90px;
+            background-color: rgb(230, 225, 225);
+            margin: 3px 0 0 13px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        footer div{
+            height: 3px;
+            width: 50px;
+            background-color: rgb(4, 1, 15);
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            border-radius: 10px 10px;
+        }
+
+        footer p{
+            margin-top: 25px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        footer span{
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Time and Notification -->
+       <section>
+        <span>9:41</span>
+        <i class="fa fa-signal" aria-hidden="true"></i>
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+        <i class="fa fa-battery-full" aria-hidden="true"></i>
+    </section>
+    <div id="notifier">
+        <a a href="musicpage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <span>Music Player</span>
+        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div id="dave">
+        <img src="dave.jpeg" alt="">
+    </div>
+    <div id="artist">
+        <p>UK Rap Music</p>
+        <span>Santan Dave</span>
+    </div>
+    <div id="audio">
+        <img src="audio.gif" alt="" width="280px">
+    </div>
+    <div class="audio-time">
+        <span class="time1">02:36</span>
+        <span>04:52</span>
+    </div>
+    <div id="music-icons">
+        <img src="shuffle.svg" alt="" width="20px">
+        <img src="rewind-front.svg" alt="" width="20px">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+        <img src="rewind-back.svg" alt="" width="20px">
+        <img src="loop-1.svg" alt="" width="20px">
+    </div>
+    <footer>
+        <div>&nbsp;</div>
+        <p>Lyrics</p>
+        <span>Lorem ipsum dolor sit amet</span>
+    </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="age">
+    <p id="checker"></p>
+    <button id="button">Submitted</button>
+    <script>
+        const age = document.getElementById("age");
+        const checker = document.getElementById("checker");
+
+        age.addEventListener("keyup", function(event){
+            const result = event.target.value
+           if (result < 18) {
+            checker.textContent = "You are still a kid";
+           } else {
+            checker.textContent = "You are an adult";
+           }
+        });
+
+        const submit = document.getElementById("button")
+        button.addEventListener("click", function(){
+            alert("Upload Submitted");
+        });
+    </script>
+</body>
+</html>

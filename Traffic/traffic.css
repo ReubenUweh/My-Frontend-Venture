@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(highway.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.pole {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 10px;
+    height: 635px;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.sides {
+    width: 15px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 45px;
+    left: 61px;
+}
+
+.two {
+    top: 140px;
+}
+
+.traffic {
+    position: absolute;
+    top: 15px;
+    left: 78px;
+    width: 120px;
+    height: 270px;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.traffic .color {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.traffic .red {
+    background-color: transparent;
+    animation: redlight 5s;
+}
+
+.traffic .amber {
+    animation: amberlight 3s 5s;
+}
+
+.traffic .green {
+    animation: greenlight 3s 8s;
+}
+
+img {
+    width: 500px;
+    position: relative;
+    left: 800px;
+    bottom: 150px;
+    animation: movingcar 2s ease-in 10s 1 normal forwards;
+
+}
+
+@keyframes redlight {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes amberlight {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: #a7810c;
+    }
+}
+
+@keyframes greenlight {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: rgb(20, 162, 20);
+    }
+}
+
+@keyframes movingcar {
+    from {
+        left: 800px;
+    }
+
+    to {
+        left: -600px;
+    }
+}

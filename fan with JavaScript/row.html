@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Standing Fan</title>
+    <style>
+        body {
+            background-color: #b3e0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .fan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fan-head {
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #1e1e2f 10%, #333e50 100%);
+            border-radius: 50%;
+            position: relative;
+            border: 10px solid #1e1e2f;
+            box-shadow: inset 0 0 0 3px #000;
+        }
+
+        .fan-blade {
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: #4d5b6b;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        #blades{
+            animation: spin 0s linear infinite;
+            position: relative;
+            top: 50%;
+        }
+
+        .fan-blade:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        .fan-blade:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+        .fan-blade:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        .fan-blade:nth-child(4) {
+            transform: translate(-50%, -50%) rotate(270deg);
+        }
+
+            @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fan-cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-image: repeating-radial-gradient(circle, transparent, transparent 2px, black 2px, black 3px);
+            opacity: 0.2;
+        }
+
+        .stand {
+            width: 20px;
+            height: 100px;
+            background: #1e1e2f;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            width: 40px;
+            background: #1e1e2f;
+            height: 100px;
+            border-radius: 10px;
+            margin-top: -10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .buttons button {
+            width: 15px;
+            height: 15px;
+            background: #f5d8b3;
+            border-radius: 50%;
+        }
+
+        .base {
+            width: 120px;
+            height: 20px;
+            background: #1e1e2f;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 0 #00000055;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color: aquamarine;">Click each button for effect</h2>
+    <div class="fan">
+        <div class="fan-head">
+            <div id="blades">
+                <div class="fan-blade"></div>
+                <div class="fan-blade"></div>
+                <div class="fan-blade"></div>
+                <div class="fan-blade"></div>
+                <div class="fan-cover"></div>
+            </div>
+        </div>
+        <div class="stand"></div>
+        <div class="buttons">
+            <button id="speedOne"></button>
+            <button id="speedTwo"></button>
+            <button id="speedThree"></button>
+        </div>
+        <div class="base"></div>
+    </div>
+    <script>
+        // getting values
+        const blades = document.getElementById("blades");
+        const speedOne = document.getElementById("speedOne");
+        const speedTwo = document.getElementById("speedTwo");
+        const speedThree = document.getElementById("speedThree");
+        //movement
+        function setSpeed(level) {
+            let speed = "0s";
+
+            if (level == 1) {
+                speed = "0.8s";
+            }
+            else if (level == 2) {
+                speed = "0.5s";
+            }
+            else if (level == 3) {
+                speed = "0.2s";
+            }
+            else {
+                return;
+            }
+            blades.style.animation = `spin ${speed} linear infinite`;
+        }
+        speedOne.addEventListener("click", function (event) {
+            setSpeed(1);
+        });
+        speedTwo.addEventListener("click", function () {
+            setSpeed(2);
+        });
+        speedThree.addEventListener("click", function () {
+            setSpeed(3);
+        });
+    </script>
+</body>
+
+</html>

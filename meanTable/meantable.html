@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mean table</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+        }
+
+        input {
+            width: inherit;
+        }
+
+        .print {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Mean Table </h1>
+    <p>Input Your Scores And Frequency</p>
+    <div id="meanTable">
+        <table id="table">
+            <!-- <tbody> -->
+                <tr>
+                    <th>x</th>
+                    <th>f</th>
+                    <th>fx</th>
+                    <th><small>x - m</small> = d</th>
+                    <th>[d]</th>
+                    <th>f[d]</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="inputX"></td>
+                    <td><input type="text" class="inputF"></td>
+                    <td class="fx"></td>
+                    <td class="d"></td>
+                    <td class="d2"></td>
+                    <td class="fd"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="inputX"></td>
+                    <td><input type="text" class="inputF"></td>
+                    <td class="fx"></td>
+                    <td class="d"></td>
+                    <td class="d2"></td>
+                    <td class="fd"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="inputX"></td>
+                    <td><input type="text" class="inputF"></td>
+                    <td class="fx"></td>
+                    <td class="d"></td>
+                    <td class="d2"></td>
+                    <td class="fd"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="inputX"></td>
+                    <td><input type="text" class="inputF"></td>
+                    <td class="fx"></td>
+                    <td class="d"></td>
+                    <td class="d2"></td>
+                    <td class="fd"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="inputX"></td>
+                    <td><input type="text" class="inputF"></td>
+                    <td class="fx"></td>
+                    <td class="d"></td>
+                    <td class="d2"></td>
+                    <td class="fd"></td>
+                </tr>
+                <tr class="print">
+                    <td class="xSum"></td>
+                    <td class="fSum"></td>
+                    <td class="fxsum"></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class="fdSum"></td>
+                </tr>
+            <!-- </tbody> -->
+        </table>
+    </div>
+    <p class="p-3">Your mean Is: <span id="meanValue"></span></p>
+
+    <p class="p-3">Your mean Deviation is: <span id="meanDeviation"></span></p>
+
+    <button onclick="addRow()" id="addRow">add new</button>
+
+
+    <script src="meantable.js"></script>
+</body>
+
+</html>

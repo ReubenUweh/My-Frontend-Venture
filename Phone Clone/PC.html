@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <style>
+			#Phone-container{
+				background-image: url(pc.jpg); 
+				width: 360px; 
+				margin: 0 auto; 
+				display: flex; 
+				height: 40rem; 
+				border-radius: 15px;
+            }
+
+            #network .img-con .img-con1 .p-con1 .p-con2 .p-con3{
+                color: #ffffff;
+            }
+
+            .img-con{
+                height: 20px;  
+                margin-left: 12rem;
+                color: #ffffff;
+            }
+
+            .img-con1{
+                height: 30px;
+                color: #ffffff;
+            }
+
+            .p-con1{
+                position: absolute; 
+                margin-top: 3rem; 
+                margin-left: 45px; 
+                font-size: 20px;
+                color: #ffffff;
+            }
+
+            .p-con2{
+                margin-top: 3.5rem; 
+                padding-right: 50px; 
+                font-size: 7rem;
+                color: #ffffff;
+            }
+
+            .p-con3{
+                color: #ffffff; 
+                position: relative;
+                margin: 15px 0 10px 75px;
+            }
+
+            #downbar{
+                margin-left:auto;
+                margin-right:auto; 
+                width: fit-content;
+                padding: 50px; 
+                position: absolute;
+                display: flex; 
+                top: 530px;
+            }
+
+            #network{
+                margin-left: 1rem;
+                color: #ffffff;
+            }
+
+            #lte{
+                height: 30px;
+                 display: relative;
+            }
+
+            #flash{
+                width: 40px;
+                position: absolute;
+            }
+
+            #camera{
+                width: 40px; 
+                margin-left:  230px;
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <div id="Phone-container">
+
+		<div id="network">MTN Nigeria </div>
+		<div>
+		<img src="signal.png"  class="img-con">
+		<img src="lte.png" id="lte">
+		<img src="battery.png" class="img-con1">
+		<p class="p-con1">Wednesday, April 2</p>
+		<p class="p-con2">13:42</p>
+		</div>
+			<div id="downbar">
+			<img src="flashlight.png"  id="flash">
+			<p class="p-con3"> Swipe to Unlock </p>
+			<img src="camera.png" id="camera">
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Media Query for Large screens */
+
+/* Hiding menu icon on large screens */
+@media (min-width:1031px) {
+    ul li:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    /* about me*/
+
+    #About-Me div span {
+        word-break: break-all;
+        font-weight: 700;
+    }
+
+    .frontend:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    /* services */
+    .backend:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .fullstack:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    #my-works {
+        justify-content: space-around;
+    }
+}

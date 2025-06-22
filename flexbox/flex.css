@@ -1,0 +1,529 @@
+body {
+  background-image: url(wallpaper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+main {
+  background-color: #111;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+}
+
+.windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.windows img {
+  position: relative;
+  top: 20px;
+  width: 50px;
+}
+
+.windows .search {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.search input {
+  width: 300px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.search .fa-search {
+  color: #111;
+  position: relative;
+  top: 5px;
+  left: -43px;
+  font-size: 22px;
+}
+
+.windows-layout {
+  position: absolute;
+  width: 950px;
+  height: 755px;
+  background-color: rgb(34, 33, 33);
+  top: -758px;
+  left: 450px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.229);
+  border-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  visibility: hidden;
+}
+
+.windows-page:hover .windows-layout {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.windows-layout input {
+  width: 750px;
+  height: 35px;
+  position: relative;
+  top: 20px;
+  left: 70px;
+  border-radius: 25px;
+  font-size: 17px;
+  padding-left: 75px;
+  background-color: #111;
+  border-radius: 1px solid rgb(45, 43, 43);
+  color: #fff;
+}
+
+.windows-layout i {
+  position: relative;
+  color: #fff;
+  top: 30px;
+  right: 720px;
+  font-size: 21px;
+}
+
+.app-location {
+  position: absolute;
+  top: 85px;
+  left: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pinned {
+  position: relative;
+  top: 5px;
+}
+
+.app-location span,
+a {
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.app-location a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#apps {
+  background-color: #ffffff10;
+  width: 105px;
+  height: 28px;
+  margin-left: 570px;
+  padding: 3px 0 0 10px;
+  border-radius: 5px;
+}
+
+#apps i {
+  position: absolute;
+  top: 6px;
+  left: 715px;
+}
+
+.row1 {
+  position: absolute;
+  top: 110px;
+  left: 90px;
+}
+
+.row1 span {
+  word-spacing: 80px;
+}
+
+.row1 span img {
+  width: 45px;
+}
+
+.row1 span img[src="word.svg"] {
+  width: 53px;
+}
+
+.row1 span img[src="powerpoint.svg"] {
+  width: 53px;
+}
+
+.row1 span img[src="excel.svg"] {
+  width: 53px;
+}
+
+.row1 span img[src="mail.png"] {
+  width: 85px;
+  position: relative;
+  top: 35px;
+}
+
+.row1 span img[src="calendar.svg"] {
+  width: 50px;
+}
+
+.names {
+  position: relative;
+  top: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row1 .names span[title="edge"] {
+  position: relative;
+  left: 5px;
+}
+
+.row1 .names span[title="word"] {
+  position: relative;
+  left: 10px;
+}
+
+.row1 .names span[title="excel"] {
+  position: relative;
+  left: 15px;
+}
+
+.row1 .names span[title="powerpoint"] {
+  position: relative;
+  left: -5px;
+}
+
+.row1 .names span[title="calendar"] {
+  position: relative;
+  left: 10px;
+}
+
+.row1 .names span[title="mail"] {
+  position: relative;
+  left: -5px;
+}
+
+.row2 {
+  position: absolute;
+  top: 260px;
+  left: 90px;
+}
+
+.row2 span {
+  word-spacing: 86px;
+}
+
+.row2 span img[src="photos.svg"] {
+  position: relative;
+  left: -8px;
+}
+
+.row2 span img[src="settings.svg"] {
+  position: relative;
+  left: -15px;
+  width: 50px;
+}
+
+.row2 span img[src="onenote.png"] {
+  position: relative;
+  left: -22px;
+}
+
+.row2 span img[src="calculator.png"] {
+  position: relative;
+  left: -10px;
+}
+
+.row2 span img[src="clock.png"] {
+  position: relative;
+  top: 15px;
+  width: 45px;
+}
+
+.row2 .names2 {
+  position: relative;
+  top: 25px;
+  right: 30px;
+  word-spacing: 70px;
+}
+
+.row2 .names2 span {
+  color: #fff;
+}
+
+.row2 span[title="store"] {
+  position: relative;
+  word-spacing: 3px;
+}
+
+.row2 span[title="photos"] {
+  margin-left: -22px;
+}
+
+.row2 span[title="settings"] {
+  margin-left: 5px;
+}
+
+.row2 span[title="calc"] {
+  margin-left: 5px;
+}
+
+.row2 span[title="clock"] {
+  margin-left: 20px;
+}
+
+/* row3 */
+.row3 {
+  position: absolute;
+  top: 370px;
+  left: 90px;
+  display: flex;
+}
+
+.row3 #images {
+  word-spacing: 73px;
+}
+
+.row3 #images img {
+  width: 55px;
+}
+
+.row3 img[src="paint.svg"] {
+  position: relative;
+  left: -7px;
+}
+
+.row3 img[src="tip.png"] {
+  position: relative;
+  left: 18px;
+}
+
+.row3 #names3 {
+  position: absolute;
+  top: 80px;
+  left: -5px;
+  word-spacing: 70px;
+  color: #fff;
+}
+
+.row3 #names3 span[title="file"] {
+  position: relative;
+  left: 10px;
+  word-spacing: 2px;
+}
+
+.row3 #names3 span[title="movie"] {
+  position: relative;
+  left: -20px;
+  word-spacing: 2px;
+}
+
+.row3 #names3 span[title="tips"] {
+  position: absolute;
+  left: 565px;
+}
+
+/* recommended section */
+.list {
+  position: absolute;
+  top: 505px;
+  left: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pinned {
+  position: relative;
+  top: 5px;
+}
+
+.list span,
+a {
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.list a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#apps2 {
+  background-color: #ffffff10;
+  width: 90px;
+  height: 28px;
+  margin-left: 490px;
+  padding: 3px 0 0 10px;
+  border-radius: 5px;
+}
+
+#apps2 i {
+  position: absolute;
+  top: 6px;
+  left: 700px;
+}
+
+#history {
+  position: absolute;
+  top: 530px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+#history .msoft img {
+  width: 50px;
+}
+
+#history .msoft span {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+
+#history .msoft span[title="time"] {
+  position: relative;
+  top: -4px;
+  left: 64px;
+}
+
+#history .msoft2 img {
+  width: 50px;
+}
+
+#history .msoft2 span {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+
+#history .msoft2 span[title="time"] {
+  position: relative;
+  top: -4px;
+  left: 64px;
+}
+
+#line {
+  width: 948px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.223);
+  position: absolute;
+  top: 670px;
+}
+
+#power {
+  position: relative;
+  top: 665px;
+  left: 5px;
+}
+
+#power .fa-user {
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+#power .fa-power-off {
+  position: relative;
+  left: -40px;
+  top: -20px;
+  font-size: 28px;
+}
+
+#power span {
+  position: relative;
+  right: 665px;
+  color: #fff;
+  font-size: 15px;
+}
+
+#app-layout {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  font-size: 17px;
+  color: #fff;
+}
+
+#app-layout span {
+  position: static;
+  width: 800px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app-layout span:hover {
+  background-color: rgba(255, 255, 255, 0.067);
+  width: 800px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.menu {
+  width: 250px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.group-title {
+  font-weight: bold;
+  color: #ccc;
+  margin: 20px 0 8px 0;
+  font-size: 18px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: -10px 0 0 -15px;
+  padding: 7px 0 10px 0;
+  color: #fff;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.067);
+  width: 800px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.menu-item span {
+  margin: 30px 0 0 20px;
+}
+
+.menu-item img {
+  width: 45px;
+  height: 45px;
+  margin: 0 10px 18px 0;
+}
+
+.new-tag {
+  color: violet;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.menu-item img[src="clock.png"] {
+  width: 40px;
+  height: 40px;
+}
