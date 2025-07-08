@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagoras Thorem</title>
+    <link rel="stylesheet" href="theorem.css">
+    <link rel="stylesheet" href="/bootclass/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2 class="text-center">Solving for Pythagoras Theorem</h2>
+            <div class="fw-bolder text-bg-info">ENTER any number for AB and BC then click BTN-SUCCESS or Solve</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="d-flex flex-column align-items-center w-50 ms-5">
+                    <div class="mt-5 d-flex">
+                        <label for="" class="fs-5 fw-bold mx-2">AB(opp):</label>
+                        <input type="text" id="inputOne" class="border border-2 border-black">
+                    </div>
+                    <div class="mt-2 d-flex ms-2">
+                        <label for="" class="fs-5 fw-bold mx-2">BC(adj):</label>
+                        <input type="text" id="inputTwo" class="border border-2 border-black">
+                    </div>
+                    <div class="mt-2 d-flex">
+                        <label for="" class="fs-5 fw-bold mx-2">AC(hyp):</label>
+                        <input type="text" id="inputThree" class="border border-2 border-black" placeholder="leave this empty">
+                    </div>
+                    <div>
+                        <button id="submit" class="btn mt-2 px-4 py-1 btn-success">Solve</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="alphabet">
+                        <h4 class="alphaA">A</h4>
+                        <h4 class="alphaB">B</h4>
+                        <h4 class="alphaC">C</h4>
+                    </div>
+                    <div class="number">
+                        <p class="numone fw-bold" id="solutionOne"></p>
+                        <p class="numtwo fw-bold" id="solutionTwo"></p>
+                        <p class="numthree fw-bold" id="solutionThree"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-8 col-md-6">
+                <div class="box mt-3 w-100">
+                    <div class="triangle ms-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="theorem.js"></script>
+</body>
+
+</html>

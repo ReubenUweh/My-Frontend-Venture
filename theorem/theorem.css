@@ -1,0 +1,158 @@
+h2{
+    text-decoration: 3px underline rgb(28, 41, 224);
+}
+
+.alphabet{
+    position: absolute;
+    left: 53%;
+    top: 60px;
+}
+
+.alphaA{
+    position: relative;
+    top: 20px;
+    left: 5;
+}
+
+.alphaB{
+    position: relative;
+    top: 240px;
+    left: -5px;
+}
+
+.alphaC{
+    position: relative;
+    top: 205px;
+    left: 265px;
+}
+
+@media (max-width:500px){
+    .alphabet{
+    position: absolute;
+    left: 13%;
+    top: 115px;
+}
+    .alphaA{
+    position: relative;
+    top: 187px;
+    left: -15px;
+}
+
+.alphaB{
+    position: relative;
+    top: 405px;
+    left: -20px;
+}
+
+.alphaC{
+    position: relative;
+    top: 370px;
+    left: 255px;
+}
+}
+
+@media (max-width:380px){
+    .alphabet{
+    position: absolute;
+    left: 13%;
+    top: 110px;
+}
+    .alphaA{
+    position: relative;
+    top: 218px;
+    left: -10px;
+}
+
+.alphaB{
+    position: relative;
+    top: 435px;
+    left: -15px;
+}
+
+.alphaC{
+    position: relative;
+    top: 402px;
+    left: 260px;
+}
+}
+
+.number{
+    position: absolute;
+    left: 52%;
+    top: 180px;
+}
+
+.numtwo{
+    position: relative;
+    top: -30px;
+    left: 160px;
+}
+
+.numthree{
+    position: relative;
+    top: 115px;
+    left: 145px;
+}
+
+@media (max-width:500px){
+    .number{
+    position: absolute;
+    left: 6%;
+    top: 385px;
+}
+
+.numone{
+    position: relative;
+    top: 50px;
+}
+
+.numtwo{
+    position: relative;
+    top: 10px;
+    left: 160px;
+}
+
+.numthree{
+    position: relative;
+    top: 145px;
+    left: 140px;
+}
+}
+
+@media (max-width:380px){
+    .number{
+    position: absolute;
+    left: 6%;
+    top: 395px;
+}
+
+.numtwo{
+    position: relative;
+    top: 10px;
+    left: 145px;
+}
+
+.numthree{
+    position: relative;
+    top: 140px;
+    left: 145px;
+}
+}
+
+#submit{
+    position: relative;
+    left: 50px;
+}
+
+.box{
+    width: 300px;
+    height: 500px;
+    padding: 27px;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-right: 250px solid transparent;
+  border-bottom: 250px solid rgb(12, 12, 136);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36 States and Capital</title>
+    <link rel="stylesheet" href="/bootclass/bootstrap/css/bootstrap.css">
+    <style>
+        #formId{
+            outline: none;
+            box-shadow: none;
+        }
+        #formId:focus{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="fw-bold text-center mt-3">36 States and Capital of Nigeria</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 mt-5">
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5 fw-bold mt-2">List of States and Capital</p>
+                    <button onclick="sortStates()" type="button" class="btn btn-info px-4 px-md-5 py-1">Sort</button>
+                </div>
+                <div>
+                    <div class="form-floating mt-4 mb-4">
+                      <input oninput="searchStates(this)" type="search" class="form-control" name="" id="formId" placeholder="">
+                      <label for="formId">Search here...</label>
+                    </div>
+                </div>
+                <ul class="list-group" id="states">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="state.js"></script>
+</body>
+</html>
